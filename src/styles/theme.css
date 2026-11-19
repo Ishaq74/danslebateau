@@ -1,0 +1,61 @@
+@theme inline {
+  /* Palette Wix */
+  --color-ink: #292929;
+  --color-slate: #303030;
+  --color-graphite: #414141;
+  --color-wine: #49252e;
+  --color-navy: #17334c;
+  --color-amber-band: #985a1d;
+  --color-umber: #704018;
+  --color-umber-deep: #38200f;
+  --color-brick: #a82b22;
+  --color-parchment: #e8dcc7;
+
+  --font-sans: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+
+  --text-prose: 1.0625rem;
+  --text-prose--line-height: 1.7;
+  --text-quote: 1.0625rem;
+  --text-quote--line-height: 1.6;
+  --text-display: clamp(2.75rem, 8vw, 5rem);
+  --text-display--line-height: 1.05;
+  --text-section: clamp(1.75rem, 4vw, 2.5rem);
+  --text-section--line-height: 1.15;
+
+  --container-reading: 46rem;
+}
+
+.dark {
+  --background: var(--color-ink);
+  --foreground: var(--color-parchment);
+  --card: var(--color-slate);
+  --card-foreground: var(--color-parchment);
+  --popover: var(--color-slate);
+  --popover-foreground: var(--color-parchment);
+  --primary: var(--color-amber-band);
+  --primary-foreground: var(--color-parchment);
+  --primary-accent: #e0a458;
+  --secondary: var(--color-graphite);
+  --secondary-foreground: var(--color-parchment);
+  --muted: var(--color-graphite);
+  --muted-foreground: color-mix(in oklab, var(--color-parchment) 70%, transparent);
+  --accent: var(--color-umber);
+  --accent-foreground: var(--color-parchment);
+  --border: color-mix(in oklab, var(--color-parchment) 14%, transparent);
+  --input: color-mix(in oklab, var(--color-parchment) 18%, transparent);
+  --outline: var(--color-amber-band);
+}
+
+@layer base {
+  html { font-family: var(--font-sans); }
+  h1, h2, h3 { font-family: var(--font-display); }
+  h1 { font-size: var(--text-display); line-height: var(--text-display--line-height); font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; }
+  h2 { font-size: var(--text-section); line-height: var(--text-section--line-height); font-weight: 700; }
+  h3 { font-size: 1.5rem; line-height: 1.25; font-weight: 600; }
+}
+
+@layer components {
+  .prose-band p { font-size: var(--text-prose); line-height: var(--text-prose--line-height); }
+  .prose-band p + p { margin-top: 1.1em; }
+}

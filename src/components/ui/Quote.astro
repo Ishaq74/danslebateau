@@ -1,0 +1,17 @@
+---
+interface Props {
+  cite?: string;
+  class?: string;
+}
+
+const { cite, class: className } = Astro.props;
+---
+
+<figure class:list={["my-2 border-l-4 border-primary-accent pl-5", className]}>
+  {cite && (
+    <figcaption class="mb-1 text-sm font-semibold uppercase tracking-wider text-primary-accent">{cite}</figcaption>
+  )}
+  <blockquote class="italic" style="font-size: var(--text-quote); line-height: var(--text-quote--line-height)">
+    <slot />
+  </blockquote>
+</figure>

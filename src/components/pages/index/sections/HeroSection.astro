@@ -1,0 +1,7 @@
+---
+import { Image } from "astro:assets";
+interface Props { image: ImageMetadata; alt: string; title: string; }
+const { image, alt, title } = Astro.props;
+---
+<h1 class="text-center">{title}</h1>
+<Image src={image} alt={alt} class="w-full rounded-lg" />

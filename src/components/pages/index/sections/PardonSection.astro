@@ -1,0 +1,11 @@
+---
+import Band from "@components/ui/Band.astro";
+import { Image } from "astro:assets";
+import pardon from "@assets/images/accueil/pas-en-colere-contre-toi.jpg";
+---
+<Band tone="wine" split="3/1">
+  <div>
+    <p>Voici une illustration saisissante de ce dont l’être humain est capable lorsqu’il choisit le pardon. Un exemple d’une force rare, qui vaut à la fois à décharge et à charge. Car si un homme, meurtri au plus profond, est capable d’un pardon d’une telle ampleur, que dire alors du pardon que Dieu, dans Sa miséricorde infinie, est capable d’accorder ? Cet homme ne prétend pas dépasser Dieu : il suit Ses conseils. Il refuse d’emprunter la voie de la colère et maîtrise sa tristesse par la confiance qu’il place en Dieu, rappelant ainsi que le pardon humain n’est qu’un reflet, fragile mais sincère, du pardon divin. Et la vie est une histoire de Miséricorde.</p>
+  </div>
+  <Image src={pardon} alt="Pas en colère contre toi" class="w-full rounded" />
+</Band>

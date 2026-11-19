@@ -31,6 +31,7 @@ import {
 
 import Brand from "./Brand.astro";
 import ThemeSwitcher from "./ThemeSwitcher.astro";
+import Navigation from "./Navigation.astro";
 
 export interface NavLink {
   label: string;
@@ -67,41 +68,7 @@ const {
         <Brand siteName={siteName} logoLightUrl={logoLightUrl} logoDarkUrl={logoDarkUrl} />
       </slot>
 
-      <div class="ml-6 hidden items-center gap-1 @2xl:flex">
-        {
-          links.map((link) => {
-            if (link.children && link.children.length > 0) {
-              return (
-                <Dropdown>
-                  <DropdownTrigger class="text-muted-foreground hover:text-foreground flex cursor-pointer items-center gap-1 rounded-md px-3 py-2 transition-colors">
-                      {link.icon && <Icon name={link.icon} class="size-4 shrink-0" />}
-                      {link.label}
-                      <IconChevronDown class="size-4" />
-                  </DropdownTrigger>
-                  <DropdownContent align="start">
-                    {link.children.map((child) => (
-                      <DropdownItem as="a" href={child.href}>
-                        {child.icon && <Icon name={child.icon} class="size-4 shrink-0" />}
-                        {child.label}
-                      </DropdownItem>
-                    ))}
-                  </DropdownContent>
-                </Dropdown>
-              );
-            }
-
-            return (
-              <a
-                href={link.href}
-                class="text-muted-foreground hover:text-foreground flex items-center gap-1.5 rounded-md px-3 py-2 transition-colors"
-              >
-                {link.icon && <Icon name={link.icon} class="size-4 shrink-0" />}
-                {link.label}
-              </a>
-            );
-          })
-        }
-      </div>
+      <Navigation links={links} />
     </div>
 
     <div class="hidden items-center gap-2 @2xl:flex">

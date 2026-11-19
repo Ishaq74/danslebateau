@@ -1,0 +1,16 @@
+---
+import ArticleCard from "./ArticleCard.astro";
+
+interface Props {
+  items: { title: string; href: string; image: ImageMetadata }[];
+  columns?: number;
+}
+
+const { items, columns = 3 } = Astro.props;
+---
+
+<div class={`grid gap-4 sm:grid-cols-${columns} items-stretch`}>
+  {items.map((item) => (
+    <ArticleCard title={item.title} href={item.href} image={item.image} />
+  ))}
+</div>

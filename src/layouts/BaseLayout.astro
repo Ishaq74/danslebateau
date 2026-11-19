@@ -1,5 +1,6 @@
 ---
 import "../styles/styles.css";
+import { Font } from "astro:assets";
 import Header, { type NavLink } from "../components/Header/Header.astro";
 import Footer, { type FooterLink } from "../components/Footer/Footer.astro";
 import { Toaster } from "../components/starwind/toast";
@@ -40,16 +41,17 @@ const footerNavLinks: FooterLink[] = [
 ];
 ---
 
-<html lang="fr">
+<html lang="fr" class="dark">
 <head>
     <meta charset="utf-8" />
+    <Font cssVariable="--font-barlow" preload />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width" />
     <title>{title}</title>
     <meta name="description" content={description} />
 </head>
-<body class="flex min-h-screen flex-col">
+<body class="flex min-h-screen flex-col font-sans antialiased">
     <Header siteName="Dans le bateau" links={links} />
     <main id="main-content" class="flex-1">
         <slot />

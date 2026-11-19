@@ -1,0 +1,19 @@
+---
+import ArticleCards from "@components/ui/ArticleCards.astro";
+import { Image } from "astro:assets";
+import couv1 from "@assets/images/logo-brillant-sur-ciel.jpg";
+import couv2 from "@assets/images/accueil/papillon.jpg";
+import couv3 from "@assets/images/accueil/oiseau.png";
+
+const items = [
+  { title: "Le Livre de Dieu", href: "/le-livre-de-dieu", image: couv1 },
+  { title: "Les Messagers", href: "/messagers", image: couv2 },
+  { title: "Dans le Bateau", href: "/", image: couv3 },
+];
+---
+<div class="text-center py-4">
+  <div class="inline-block px-8 py-4 bg-red-900/60 border border-red-700 rounded">
+    <h2 class="text-amber-100 font-serif text-2xl tracking-wide">LES ARTICLES :</h2>
+  </div>
+</div>
+<ArticleCards items={items} />
