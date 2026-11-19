@@ -1,0 +1,420 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+
+import bateau from '@assets/images/bateau-qui-navigue-sur-eau.jpg';
+import fraise from '@assets/images/fraise.png';
+import salahuddin from '@assets/images/salahuddin-jitmoud.jpg';
+import jardin from '@assets/images/la-parabole-du-jardin.png';
+import rappel from '@assets/images/un-rappel-puissant.png';
+import oiseau from '@assets/images/oiseau.png';
+import quran from '@assets/images/quran-6-33.png';
+import enfant from '@assets/images/papillon.jpg';
+import tiktok from '@assets/images/video-tiktok-le-bateauw.jpg';
+---
+
+<BaseLayout title="Le Livre de Dieu" description="Voyage au cœur du Livre tout entier.">
+  <div class="bg-[#38200F] text-[#E8DCC7] min-h-screen">
+    <div class="max-w-3xl mx-auto">
+
+      <!-- Nav bar -->
+      <div class="bg-black/60 text-xs py-2 px-4 flex gap-4">
+        <a href="/" class="text-amber-300">Accueil</a>
+        <a href="/le-livre-de-dieu" class="text-gray-300">Le Livre De Dieu</a>
+        <a href="/messagers" class="text-gray-300">Les Messagers</a>
+      </div>
+
+      <!-- Hero title -->
+      <h1 class="text-center text-4xl md:text-6xl font-serif font-bold text-amber-300 py-6 tracking-wide">
+        VOYAGE AU COEUR DU<br/>LIVRE TOUT ENTIER
+      </h1>
+
+      <!-- Hero image -->
+      <Image src={bateau} alt="Voilier dans la tempête" class="w-full" />
+
+      <!-- Metadata bar -->
+      <div class="bg-[#985A1D] text-xs py-2 px-4 flex justify-between items-center">
+        <span>Site en ligne depuis le 25 décembre 2025. ✅</span>
+        <span class="bg-white text-black px-2 py-0.5 rounded text-xs">Écouter</span>
+      </div>
+
+      <!-- Section 1: two columns text + autumn image -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#414141] p-6 text-sm leading-snug text-center space-y-3">
+          <p>"QURAN" est la méthode utilisée pour transmettre le Livre, une forme et méthode dans une langue claire. 📜 Le Qur’an est porteur du Rappel, parce qu’il transmet le Livre (Al-Kitâb). 🧠🔔</p>
+          <p>En bref : le Qur’an est le tafsîr du Livre, son exposé explicite et son rassemblement. Le Livre existait déjà avant le Coran en langue arabe 📖🕰️ Et ce Coran, justement, en est le défenseur et le rappel vivant 🛡️</p>
+        </div>
+        <Image src={jardin} alt="Parabole du jardin" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Golden banner -->
+      <div class="bg-[#985A1D] text-center py-3 px-4">
+        <p class="text-[#E8DCC7] text-sm">Le Livre précède le Coran arabe 🕯️ Le Dhikr est logé dans le Livre 🚢 Le Coran est un véhicule, pas la source première.</p>
+      </div>
+
+      <!-- Anthracite block with flowers (strawberry) -->
+      <div class="bg-[#303030] p-6 text-sm leading-snug space-y-4 relative">
+        <Image src={fraise} alt="Fraise" class="w-24 float-left mr-4" />
+        <p>Les chrétiens disent détenir le Livre de Dieu 📖✝️. Les juifs disent détenir le Livre de Dieu 📖✡️. Et pourtant, paradoxe amer: malgré cette source commune, ils se heurtent et s’opposent sur le plan des idées 🤝💥.</p>
+        <p>Comme si une désinformation aux accents diaboliques s’était glissée entre eux, pour les diviser au lieu de les rapprocher 😈🧩🚧.</p>
+        <blockquote class="border-l-4 border-amber-500 pl-4 italic text-amber-200">Quran 2 : 113 — Les Juifs ont dit : "Les Nazaréens ne se fondent sur rien", et les Nazaréens ont dit : "Les Juifs ne se fondent sur rien", alors qu'ils récitent le Livre !</blockquote>
+        <blockquote class="border-l-4 border-amber-500 pl-4 italic text-amber-200">Quran 25 : 30 — Le messager dit : "Mon peuple a pris ce Coran pour une chose délaissée !"</blockquote>
+      </div>
+
+      <!-- Aquatic anime image -->
+      <Image src={rappel} alt="Illustration" class="w-full" />
+
+      <div class="bg-[#38200F] text-center py-3 px-4 text-sm">
+        <p>Idrîs, dans le Coran arabe, c’est un passage éclair 📜⚡. Hénoch / Révélation de Idriss 104:2 : Ne craignez pas, justes...</p>
+      </div>
+
+      <!-- Brown section with white butterfly -->
+      <div class="bg-[#704018] p-6 text-sm leading-snug space-y-3 relative">
+        <Image src={oiseau} alt="Papillon blanc" class="w-20 float-left mr-4" />
+        <p>Dans la continuité des noms coraniques difficiles à identifier par le seul Coran, apparaît celui de Mickael (Mīkā’īl) 🕊️, cité une seule fois 📖.</p>
+        <blockquote class="border-l-4 border-amber-300 pl-4 italic text-amber-100">Quran 2 : 98 — Quiconque est ennemi de Dieu, de Ses anges, de Ses messagers, de Gabriel et de Michaël : Dieu est l'ennemi des dénégateurs.</blockquote>
+        <p>Les Anges peuvent: inspirer une idée, donner du courage, calmer la peur, augmenter la patience...</p>
+      </div>
+
+      <!-- Sky character image -->
+      <Image src={quran} alt="Personnage dans le ciel" class="w-full" />
+
+      <div class="bg-[#38200F] grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#985A1D] p-6 text-sm leading-snug space-y-3 text-center">
+          <p>Le Livre Des Psaumes. Lorsque l’on parle du Livre de Dieu 📖✨, on ne peut qu’évoquer avec respect la clarté du Coran en arabe.</p>
+          <blockquote class="border-l-4 border-amber-200 pl-4 italic">Quran 4 : 163 — Nous t'avons fait révélation comme Nous avions fait révélation à Noé et aux prophètes après lui... et Nous avons donné les Psaumes à David.</blockquote>
+        </div>
+        <div class="bg-[#303030] p-6 text-sm leading-snug space-y-3 text-gray-200">
+          <p>On connaît 150 Psaumes dans le recueil “classique” 📖✨. Mais l’histoire ne s’arrête pas là : à Qumrân, on a retrouvé des psaumes “en plus” 🏺📜.</p>
+          <p>Psaume 69:6 : Que ceux qui espèrent en toi ne soient pas confus à cause de moi, Seigneur, Eternel des armées!</p>
+          <p>Psaume 69:20 : L’opprobre me brise le cœur, et je suis malade ; J’attends de la compassion, mais en vain.</p>
+        </div>
+      </div>
+
+      <!-- Night landscape two columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <Image src={enfant} alt="Paysage nocturne" class="w-full h-full object-cover" />
+        <div class="bg-[#414141] p-6 text-sm leading-snug space-y-3 text-gray-200">
+          <p>Le Livre De Job. Un autre nom qui apparaît très peu dans le Coran en arabe est celui d’Ayyûb (Job) 🕊️📖.</p>
+          <p>Ayyûb fait partie des prophètes ayant reçu une révélation 🌟📩. Et dans ses citations de Job/Ayyûb, le Coran est très précis.</p>
+          <blockquote class="border-l-4 border-amber-500 pl-4 italic text-amber-200">Job 1:12 — Le Seigneur dit à Satan : « Soit ! Tu as pouvoir sur tout ce qu’il possède, mais tu ne porteras pas la main sur lui. »</blockquote>
+          <blockquote class="border-l-4 border-amber-500 pl-4 italic text-amber-200">Coran 38 : 41 — Rappelle Job, Notre serviteur, lorsqu'il appela son Seigneur : "Le diable m'a infligé détresse et châtiment".</blockquote>
+        </div>
+      </div>
+
+      <!-- Bordeaux block with pink flowers -->
+      <div class="bg-[#49252E] p-6 text-sm leading-snug space-y-3 text-center">
+        <p>Job, autrefois homme de réussite et de bénédiction 🌾🏆, se retrouve réduit à l’état d’os et de cendres 🦴🌪️.</p>
+        <p>Job 42:10 — Le Seigneur rétablit la condition de Job quand il eut prié pour ses amis, et le Seigneur lui donna le double de tout ce qu’il avait possédé.</p>
+        <p>Quran 38 : 43 — Et Nous lui rendîmes sa famille et la fîmes deux fois plus nombreuse, comme une miséricorde de Notre part.</p>
+      </div>
+
+      <!-- Interior ancient image -->
+      <Image src={bateau} alt="Intérieur ancien" class="w-full" />
+
+      <div class="bg-[#985A1D] text-center py-3 px-4 text-sm">
+        <p>Jonas, dans le Coran, apparaît comme un messager qui fuit, puis se repent. Le Livre de Jonas nous montre un peuple qui a cru.</p>
+      </div>
+
+      <!-- Red/grey alternating blocks -->
+      <div class="bg-[#414141] text-center py-3 px-4 text-sm font-bold">Jonas 3:5</div>
+      <div class="bg-[#A82B22] text-center py-6 px-4 text-sm text-[#E8DCC7]">
+        <p>Aussitôt, les gens de Ninive crurent en Dieu. Ils annoncèrent un jeûne, et tous, du plus grand au plus petit, se vêtirent de toile à sac.</p>
+      </div>
+      <div class="bg-[#414141] text-center py-3 px-4 text-sm font-bold">Quran 10 : 98</div>
+      <div class="bg-[#A82B22] text-center py-6 px-4 text-sm text-[#E8DCC7]">
+        <p>Si seulement il y avait une cité qui ait cru, et à laquelle sa foi eut été utile, en dehors du peuple de Jonas !</p>
+      </div>
+      <div class="bg-[#414141] text-center py-3 px-4 text-sm font-bold">Matthieu 12:40</div>
+      <div class="bg-[#A82B22] text-center py-6 px-4 text-sm text-[#E8DCC7]">
+        <p>Car, de même que Jonas fut trois jours et trois nuits dans le ventre d'un grand poisson, de même le Fils de l'homme sera trois jours et trois nuits dans le sein de la terre.</p>
+      </div>
+
+      <!-- Sunset image -->
+      <Image src={quran} alt="Coucher de soleil" class="w-full" />
+
+      <!-- Two columns: anthracite + anime face -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+          <p>Contrairement à une idée bien ancrée, « Évangile » n’est pas, à l’origine, le nom d’un livre. C’est avant tout un mot, issu du grec εὐαγγέλιον, qui signifie « bonne nouvelle ».</p>
+          <p>De la même manière, le Qurʾān n’est pas d’abord un “titre”, mais un terme arabe signifiant récitation, lecture proclamée, et aussi rassemblement.</p>
+        </div>
+        <Image src={salahuddin} alt="Visage anime" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Blue panel -->
+      <div class="bg-[#17334C] p-6 text-sm leading-snug text-gray-100 space-y-3">
+        <p>ʿĪsā/Jésus avait douze apôtres 🌿👣, et le mot Injīl apparaît douze fois dans le Coran 📜🔢. Hasard ? Dans le pays de Dieu, le hasard n’a pas d’adresse 🚫🎲.</p>
+        <p>Les signaux lumineux ✨📡 sont sans appel quand il s’agit d’indiquer la direction à emprunter 🧭.</p>
+      </div>
+
+      <!-- Grey block + brown butterfly -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#414141] p-6 text-sm leading-snug text-gray-200 space-y-3">
+          <p>Le verdict est sans appel ⚖️✨ : le Coran en arabe pointe clairement vers ʿĪsā, fils de Maryam 👶🌿, l’homme entouré de douze apôtres 👣.</p>
+        </div>
+        <div class="bg-[#704018] p-6 flex items-center justify-center">
+          <Image src={oiseau} alt="Papillon brun" class="w-32" />
+        </div>
+      </div>
+
+      <!-- Snow landscape image -->
+      <Image src={rappel} alt="Paysage enneigé" class="w-full" />
+
+      <!-- Red/brown two columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#A82B22] p-6 text-sm leading-snug text-[#E8DCC7] space-y-3 text-center">
+          <p>La Torah - Pentateuque. C’est avec la Torah que le Coran arabe entretient ses points de liaison les plus denses.</p>
+          <p>Commençons par le mot Torah / Tawrah lui-même : exactement comme Injil ou Issa, il ne s’agit pas d’un mot d’origine arabe, mais d’une reprise phonétique issue de l’hébreu.</p>
+        </div>
+        <Image src={fraise} alt="Silhouette" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Grey block -->
+      <div class="bg-[#414141] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Cette vérification des occurrences de Torah / Tawrah dans le Coran arabe éclaire nettement la nature du terme : il ne se comporte pas comme un mot arabe productif 📖🔎.</p>
+        <p>Il ne développe ni morphologie interne, ni dérivations à partir d’une racine, ni variations qui signaleraient une intégration organique au système lexical de l’arabe 🌱🧩.</p>
+      </div>
+
+      <!-- Vers la lumière two columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#38200F] p-6 text-sm leading-snug text-[#E8DCC7] space-y-3 text-center">
+          <h2 class="text-xl font-serif text-amber-300">Vers la lumière</h2>
+          <p>La Torah 📜 commence par le Livre de la Genèse📖, et on n’a pas besoin d’attendre longtemps ⏳ pour constater que les mises en garde du Coran arabe 🕌✨ au sujet de l’interprétation des mots 🗝️🧠 sont toujours d’actualité ✅.</p>
+        </div>
+        <Image src={quran} alt="Personnage face au ciel" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Landscape image -->
+      <Image src={bateau} alt="Paysage" class="w-full" />
+
+      <!-- Brown/grey alternating -->
+      <div class="bg-[#985A1D] text-center py-3 px-4 text-sm">
+        <p>Genèse 2:7 — YHWH Dieu forma l’homme de la poussière du sol, il insuffla dans ses narines un souffle de vie, et l’homme devint un être vivant.</p>
+      </div>
+      <div class="bg-[#414141] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Coran 3 : 59 — Pour Dieu, Jésus est comme Adam qu'Il créa de poussière, puis Il lui dit "Sois": et il fut.</p>
+        <p>Genèse 2 : 16 — Et l'Eternel Dieu commanda à l'homme, disant: Tu mangeras librement de tout arbre du jardin; mais tu ne mangeras pas de l'arbre de la connaissance du bien et du mal.</p>
+      </div>
+
+      <!-- Window character two columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#985A1D] p-6 text-sm leading-snug text-[#E8DCC7] space-y-3 text-center">
+          <p>Coran 5 : 27 — Récite-leur la nouvelle des deux fils d'Adam, en toute vérité.</p>
+          <p>Genèse 2 : 17 — Au bout de quelque temps, Caïn fit à l'Eternel une offrande des fruits de la terre.</p>
+        </div>
+        <Image src={oiseau} alt="Personnage à la fenêtre" class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Anthracite block + butterfly -->
+      <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Genèse 6 : 13 — Alors Dieu dit à Noé: La fin de toute chair est arrêtée par devers moi.</p>
+        <p>Quran 11 : 36 — Il fut révélé à Noé : "Nul ne croira parmi ton peuple que celui qui a déjà cru."</p>
+      </div>
+
+      <!-- Sailboat image -->
+      <Image src={bateau} alt="Voilier" class="w-full" />
+
+      <!-- Brown panel -->
+      <div class="bg-[#985A1D] p-6 text-sm leading-snug text-[#E8DCC7] space-y-3 text-center">
+        <p>Genèse 22:1 — Après ces choses, Dieu mit Abraham à l'épreuve, et lui dit: Abraham! Et il répondit: Me voici!</p>
+        <p>Coran : 37 : 102 — Quand il fut en âge de l'accompagner, il dit : "Ô mon fils, je me vois dans mon sommeil en train de te sacrifier."</p>
+      </div>
+
+      <!-- Two columns: anthracite quote + brown title -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 text-center">
+          <p class="italic">Quran 40 : 34 — Joseph vint à vous auparavant avec les preuves.</p>
+        </div>
+        <div class="bg-[#985A1D] p-6 text-sm leading-snug text-[#E8DCC7] text-center">
+          <h3 class="font-serif text-lg mb-2">Abraham</h3>
+          <p>Yusuf n’est pas un cas à part dans ces petites relations mathématiques. Je peux exposer la même méthode fascinante avec Abraham aussi.</p>
+        </div>
+      </div>
+
+      <!-- Decorative flowers section -->
+      <div class="bg-[#985A1D] p-6 text-sm leading-snug text-[#E8DCC7] text-center space-y-3 relative">
+        <Image src={fraise} alt="Fleurs" class="w-20 mx-auto mb-3" />
+        <p>Pour tous ceux qui se demandent si la Torah que je cite est bien la Torah dont parle le Coran… ✅📜 Vous avez la réponse. 🎯</p>
+      </div>
+
+      <!-- LE LIVRE DE JONAS title -->
+      <h2 class="text-center text-4xl font-serif font-bold text-amber-300 py-6 tracking-wide bg-[#38200F]">
+        LE LIVRE DE JONAS
+      </h2>
+
+      <div class="bg-[#985A1D] text-center py-3 px-4 text-sm">
+        <p>Après le Livre d’Abdias, le Livre de Jonas est le plus petit livre de la Bible 📖✨, avec seulement quatre chapitres 🐋📜.</p>
+      </div>
+
+      <!-- Alternating panels -->
+      <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Jonas 1:3 — Jonas se leva, mais pour s’enfuir à Tarsis, loin de la face du Seigneur.</p>
+        <p>Quran 21 : 87 — Et Zun-Nun (Jonas) quand il partit, en colère. Il pensa que Nous N'allions pas l'éprouver.</p>
+      </div>
+      <div class="bg-[#985A1D] text-center py-3 px-4 text-sm">
+        <p>Coran 37:139 — Jonas était certes du nombre des messagers. Lorsqu’il s’enfuit vers le bateau chargé.</p>
+      </div>
+      <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Jonas 1:7 — Et les matelots se disaient entre eux : « Tirons au sort pour savoir à qui nous devons ce malheur. »</p>
+        <p>Jonas 2:11 — Alors le Seigneur parla au poisson, et celui-ci rejeta Jonas sur la terre ferme.</p>
+      </div>
+
+      <!-- Whale image -->
+      <Image src={bateau} alt="Baleine" class="w-full" />
+
+      <div class="bg-[#985A1D] text-center py-3 px-4 text-sm">
+        <p>Jonas 3:5 — Aussitôt, les gens de Ninive crurent en Dieu. Ils annoncèrent un jeûne.</p>
+      </div>
+      <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Quran 10 : 98 — Si seulement il y avait une cité qui ait cru, et à laquelle sa foi eut été utile, en dehors du peuple de Jonas !</p>
+        <p>Évangile - Matthieu 12:40 — Car, de même que Jonas fut trois jours et trois nuits dans le ventre d'un grand poisson...</p>
+      </div>
+
+      <!-- Character sky pink -->
+      <Image src={quran} alt="Personnage face au ciel rose" class="w-full" />
+
+      <div class="bg-[#49252E] p-6 text-sm leading-snug text-[#E8DCC7] space-y-3 text-center">
+        <p>Le verdict est sans appel ⚖️✨ : le Coran en arabe pointe clairement vers ʿĪsā, fils de Maryam 👶🌿.</p>
+        <p>Sourate Maryam (19), versets 16 à 19 : Mentionne Marie dans le Livre, lorsqu’elle se retira de sa famille en un lieu à l’orient.</p>
+      </div>
+
+      <!-- Beach character two columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#985A1D] p-6 text-sm leading-snug text-[#E8DCC7] space-y-3 text-center">
+          <p>Le contenu ciblé est clairement identifié, avec un taux de réussite de 100 % ✅✨.</p>
+          <p>Parmi les discours les plus répandus, on trouve cette idée: “L’Évangile que nous avons aujourd’hui ne serait pas celui auquel le Coran arabe fait allusion”.</p>
+        </div>
+        <Image src={salahuddin} alt="Personnage sur la plage" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Coran 2 : 75 — Désirez-vous qu'ils vous croient alors que certains d'entre eux ont déjà entendu la Parole de Dieu mais l'altèrent alors sciemment après l'avoir comprise ?</p>
+        <p>Coran 2 : 79 — Malheur, donc, à ceux qui écrivent le Livre de leurs propres mains, puis disent : "Ceci vient de Dieu".</p>
+        <p>Coran 3 : 78 — Certains d'entre eux déforment le Livre avec leur langue pour vous faire penser que cela provient du Livre.</p>
+      </div>
+
+      <!-- Lighthouse image -->
+      <Image src={rappel} alt="Phare nocturne" class="w-full" />
+
+      <div class="bg-[#985A1D] p-6 text-sm leading-snug text-[#E8DCC7] space-y-3">
+        <p>Parmi les recueils liés à l’Évangile, on trouve celui de Thomas 📜, un texte de 114 chapitres, qui nous rappelle les 114 sourates du coran.</p>
+        <p>Alors que l’Église a enfoui ce texte sous terre 🕳️📜, le Coran le fait remonter à la surface par une allusion claire et limpide ✨📖.</p>
+      </div>
+
+      <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Coran 5:110 — « Quand tu façonnais de l’argile la forme d’un oiseau, puis tu soufflais dedans, et il devenait un oiseau par Ma permission… »</p>
+        <p>Coran 3:49 — « Je façonne pour vous de l’argile comme la forme d’un oiseau, puis je souffle dedans, et il devient un oiseau vivant, par la permission de Dieu. »</p>
+      </div>
+
+      <!-- Rain character image -->
+      <Image src={bateau} alt="Personnage sous la pluie" class="w-full" />
+
+      <div class="bg-[#985A1D] text-center py-3 px-4 text-sm">
+        <p>Parmi les discours anti-Évangile qu’on entend dans le monde musulman, revient souvent l’idée que le vrai Injīl donné à Jésus serait un seul livre.</p>
+      </div>
+
+      <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Je suis ravi d’annoncer aux musulmans que le Coran arabe qu’ils tiennent entre leurs mains ne s’est jamais décrit comme un texte “écrit de la main de Dieu”.</p>
+        <p>Coran 3 : 52 — Puis, quand Jésus ressentit de la dénégation de leur part, il dit : "Qui sont mes assistants envers Dieu ?" Les apôtres dirent : "Nous sommes les assistants de Dieu".</p>
+      </div>
+
+      <!-- Fire character two columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+          <p>Coran 5 : 111 — Et quand J'ai révélé aux apôtres : "Croyez en Moi et en Mon messager", ils dirent : "Nous croyons ; témoigne que nous sommes soumis".</p>
+          <p>Coran 61 : 14 — Ô vous qui avez cru, soyez les assistants de Dieu, à l'instar de ce que Jésus, fils de Marie, dit aux apôtres.</p>
+        </div>
+        <Image src={salahuddin} alt="Personnage au feu" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="bg-[#985A1D] text-center py-3 px-4 text-sm">
+        <p>La Parabole Du Semeur. Évangile - Matthieu 13 : Ce même jour, Jésus sortit de la maison, et s'assit au bord de la mer.</p>
+      </div>
+
+      <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <blockquote class="border-l-4 border-amber-500 pl-4 italic text-amber-200">Quran 48 : 29 — Mohammed est le messager de Dieu. Ceux qui sont avec lui sont durs envers les dénégateurs, miséricordieux entre eux.</blockquote>
+        <blockquote class="border-l-4 border-amber-500 pl-4 italic text-amber-200">Quran 7 : 58 — Dans une bonne terre la végétation sort par la permission de son Seigneur.</blockquote>
+        <blockquote class="border-l-4 border-amber-500 pl-4 italic text-amber-200">Quran 2 : 261 — L'exemple de ceux qui dépensent leurs biens dans le chemin de Dieu est similaire à une graine qui produit sept épis.</blockquote>
+      </div>
+
+      <!-- Bird image two columns -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#985A1D] p-6 text-sm leading-snug text-[#E8DCC7] space-y-3">
+          <p>La Torah - Pentateuque. C’est avec la Torah que le Coran arabe entretient ses points de liaison les plus denses.</p>
+          <p>Commençons par le mot Torah / Tawrah lui-même : exactement comme Injil ou Issa, il ne s’agit pas d’un mot d’origine arabe.</p>
+        </div>
+        <Image src={oiseau} alt="Oiseau" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Cette vérification des occurrences de Torah / Tawrah dans le Coran arabe éclaire nettement la nature du terme.</p>
+        <p>Le résultat de cette constatation est sans équivoque pour qui veut bien voir 👁️: le Coran arabe pointe, encore une fois, vers une direction extérieure.</p>
+      </div>
+
+      <!-- Interior nocturne image -->
+      <Image src={rappel} alt="Intérieur nocturne" class="w-full" />
+
+      <div class="bg-[#985A1D] p-6 text-sm leading-snug text-[#E8DCC7] space-y-3">
+        <p>La correction par le Coran arabe d’une fausse interprétation étant désormais posée ✅📜, passons à l’étape suivante: la confirmation 🔎.</p>
+        <p>Genèse 2:2 — Dieu acheva au septième jour son œuvre, qu’il avait faite ; et il se reposa au septième jour.</p>
+        <p>Quran 50 : 38 — Et Nous avons créé les cieux et la terre et ce qui est entre eux en six jours, et aucune fatigue ne nous a touchés.</p>
+      </div>
+
+      <!-- Prayer section -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#985A1D] p-6 text-sm leading-snug text-[#E8DCC7] space-y-3 text-center">
+          <h3 class="font-serif text-lg mb-2">La Prière</h3>
+          <p>Exode 20:11 – texte : Car en six jours YHWH a fait les cieux, la terre, la mer et tout ce qui s’y trouve, et il se reposa / vayyānaḥ le septième jour.</p>
+        </div>
+        <Image src={salahuddin} alt="Personnage priant" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Genèse 2:7 — YHWH Dieu forma l’homme de la poussière du sol, il insuffla dans ses narines un souffle de vie, et l’homme devint un être vivant.</p>
+        <p>Coran 3 : 59 — Pour Dieu, Jésus est comme Adam qu'Il créa de poussière, puis Il lui dit "Sois": et il fut.</p>
+      </div>
+
+      <!-- Tower section -->
+      <div class="bg-[#985A1D] text-center py-3 px-4 text-sm">
+        <p>Genèse 2 : 16 — Et l'Eternel Dieu commanda à l'homme, disant: Tu mangeras librement de tout arbre du jardin.</p>
+      </div>
+
+      <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Coran 2 : 35 — Et Nous avons dit : "Ô Adam, habite au Paradis, toi et ton épouse, et mangez-en à volonté là où vous voulez."</p>
+        <p>Quran 5 : 27 — Récite-leur la nouvelle des deux fils d'Adam, en toute vérité.</p>
+      </div>
+
+      <!-- Blue butterfly section -->
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="bg-[#985A1D] p-6 text-sm leading-snug text-[#E8DCC7] space-y-3 text-center">
+          <Image src={oiseau} alt="Papillon bleu" class="w-24 mx-auto mb-3" />
+          <p>Genèse 2 : 17 — Au bout de quelque temps, Caïn fit à l'Eternel une offrande des fruits de la terre.</p>
+        </div>
+        <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+          <p>Quran 5 : 28 — Si tu étends vers moi ta main pour me tuer, moi, je n'étendrai pas vers toi ma main pour te tuer.</p>
+          <p>Genèse 4 : 8 — Cependant, Caïn adressa la parole à son frère Abel; mais, comme ils étaient dans les champs, Caïn se jeta sur son frère Abel, et le tua.</p>
+        </div>
+      </div>
+
+      <!-- Last illustration -->
+      <Image src={bateau} alt="Dernière illustration" class="w-full" />
+
+      <div class="bg-[#303030] p-6 text-sm leading-snug text-gray-200 space-y-3">
+        <p>Genèse 6 : 13 — Alors Dieu dit à Noé: La fin de toute chair est arrêtée par devers moi.</p>
+        <p>Quran 11 : 36 — Il fut révélé à Noé : "Nul ne croira parmi ton peuple que celui qui a déjà cru."</p>
+        <p>Genèse 22:1 — Après ces choses, Dieu mit Abraham à l'épreuve.</p>
+        <p>Coran : 37 : 102 — Quand il fut en âge de l'accompagner, il dit : "Ô mon fils, je me vois dans mon sommeil en train de te sacrifier."</p>
+      </div>
+
+      <!-- Footer -->
+      <div class="bg-[#704018] text-center py-4 px-6 text-xs text-[#E8DCC7] space-y-1">
+        <p>Merci d’avoir pris de votre temps pour venir ici, lire, réfléchir, remettre en question, chercher la vérité.</p>
+        <p>Nom : Sofiane Louaar — Statut : Éditeur indépendant — tiktok : Sofianemessager</p>
+        <p>Bienvenue ici. Vous êtes chez vous. L’Éternel sait mieux.</p>
+        <p>© https://www.danslebateau.com/le-livre-de-dieu-1</p>
+      </div>
+
+    </div>
+  </div>
+</BaseLayout>

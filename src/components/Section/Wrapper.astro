@@ -1,0 +1,119 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"div"> {
+  tag?: "div" | "section" | "article" | "aside" | "main" | "header" | "footer" | "nav";
+  display?: "block" | "flex" | "grid" | "inline-flex" | "inline-grid";
+  cols?: number | "auto-fit" | "auto-fill";
+  gap?: string;
+  rowGap?: string;
+  columnGap?: string;
+  flexDirection?: "row" | "row-reverse" | "column" | "column-reverse";
+  flexWrap?: "nowrap" | "wrap" | "wrap-reverse";
+  alignItems?: "start" | "center" | "end" | "baseline" | "stretch";
+  justifyContent?: "start" | "center" | "end" | "between" | "around" | "evenly";
+  alignContent?: "start" | "center" | "end" | "between" | "around" | "stretch";
+  padding?: string;
+  paddingBlock?: string;
+  paddingInline?: string;
+  paddingTop?: string;
+  paddingBottom?: string;
+  paddingLeft?: string;
+  paddingRight?: string;
+  margin?: string;
+  marginBlock?: string;
+  marginInline?: string;
+  marginTop?: string;
+  marginBottom?: string;
+  marginLeft?: string;
+  marginRight?: string;
+  width?: string;
+  height?: string;
+  maxWidth?: string;
+  minHeight?: string;
+  className?: string;
+  style?: string;
+  [key: string]: any;
+}
+
+const {
+  tag = "div",
+  display = "block",
+  cols,
+  gap,
+  rowGap,
+  columnGap,
+  flexDirection,
+  flexWrap,
+  alignItems = "stretch",
+  justifyContent = "start",
+  alignContent = "stretch",
+  padding,
+  paddingBlock,
+  paddingInline,
+  paddingTop,
+  paddingBottom,
+  paddingLeft,
+  paddingRight,
+  margin,
+  marginBlock,
+  marginInline,
+  marginTop,
+  marginBottom,
+  marginLeft,
+  marginRight,
+  width,
+  height,
+  maxWidth,
+  minHeight,
+  className = "",
+  style: inlineStyle = "",
+  ...rest
+} = Astro.props as Props;
+
+const validTags = ["div", "section", "article", "aside", "main", "header", "footer", "nav"];
+const Tag = validTags.includes(tag) ? tag : "div";
+
+const alignMap: Record<string, string> = { start: "start", center: "center", end: "end", stretch: "stretch", baseline: "baseline" };
+const justifyMap: Record<string, string> = { start: "start", center: "center", end: "end", between: "space-between", around: "space-around", evenly: "space-evenly" };
+
+const classes = [
+  display === "grid" ? "grid" : display === "flex" ? "flex" : display === "inline-flex" ? "inline-flex" : display === "inline-grid" ? "inline-grid" : "block",
+  cols && typeof cols === "number" ? `grid-cols-${cols}` : "",
+  cols === "auto-fit" ? "grid-cols-[repeat(auto-fit,minmax(0,1fr))]" : "",
+  cols === "auto-fill" ? "grid-cols-[repeat(auto-fill,minmax(0,1fr))]" : "",
+  flexDirection ? `flex-${flexDirection}` : "",
+  flexWrap ? `flex-${flexWrap}` : "",
+  `items-${alignMap[alignItems] ?? "stretch"}`,
+  `justify-${justifyMap[justifyContent] ?? "start"}`,
+  `content-${alignMap[alignContent] ?? "stretch"}`,
+  padding ? `p-${padding}` : "",
+  paddingBlock ? `py-${paddingBlock}` : "",
+  paddingInline ? `px-${paddingInline}` : "",
+  paddingTop ? `pt-${paddingTop}` : "",
+  paddingBottom ? `pb-${paddingBottom}` : "",
+  paddingLeft ? `pl-${paddingLeft}` : "",
+  paddingRight ? `pr-${paddingRight}` : "",
+  margin ? `m-${margin}` : "",
+  marginBlock ? `my-${marginBlock}` : "",
+  marginInline ? `mx-${marginInline}` : "",
+  marginTop ? `mt-${marginTop}` : "",
+  marginBottom ? `mb-${marginBottom}` : "",
+  marginLeft ? `ml-${marginLeft}` : "",
+  marginRight ? `mr-${marginRight}` : "",
+  width ? `w-${width}` : "",
+  height ? `h-${height}` : "",
+  maxWidth ? `max-w-${maxWidth}` : "",
+  minHeight ? `min-h-${minHeight}` : "",
+  gap ? `gap-${gap}` : "",
+  rowGap ? `gap-y-${rowGap}` : "",
+  columnGap ? `gap-x-${columnGap}` : "",
+  className,
+].filter(Boolean).join(" ");
+
+const style = [inlineStyle].filter(Boolean).join(" ");
+---
+
+<Tag class={classes} style={style} {...rest}>
+  <slot />
+</Tag>

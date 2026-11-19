@@ -1,0 +1,175 @@
+---
+import type { HTMLAttributes } from "astro/types";
+
+interface Props extends HTMLAttributes<"section"> {
+  tag?: "section" | "div" | "article" | "aside" | "nav" | "header" | "footer" | "main";
+  preset?: "default" | "primary" | "secondary" | "accent";
+  variant?: "default" | "primary" | "secondary" | "accent";
+  /** Number of columns (1-6) or "auto" */
+  cols?: number | "auto";
+  /** For 2 columns: ratio like "1/2", "1/3", "2/3", "1/4", "3/4", "3/1", "1/1" */
+  split?: string;
+  bg?: string;
+  padding?: string;
+  paddingBlock?: string;
+  paddingInline?: string;
+  paddingTop?: string;
+  paddingBottom?: string;
+  paddingLeft?: string;
+  paddingRight?: string;
+  margin?: string;
+  marginBlock?: string;
+  marginInline?: string;
+  marginTop?: string;
+  marginBottom?: string;
+  marginLeft?: string;
+  marginRight?: string;
+  gap?: string;
+  rowGap?: string;
+  columnGap?: string;
+  border?: boolean;
+  borderColor?: string;
+  borderWidth?: string;
+  borderStyle?: "solid" | "dashed" | "dotted" | "double" | "groove" | "ridge" | "inset" | "outset";
+  textColor?: string;
+  backgroundColor?: string;
+  textAlign?: "left" | "center" | "right" | "justify";
+  alignItems?: "start" | "center" | "end" | "stretch" | "baseline";
+  justifyContent?: "start" | "center" | "end" | "between" | "around" | "evenly";
+  width?: string;
+  minHeight?: string;
+  maxWidth?: string;
+  className?: string;
+  [key: string]: any;
+}
+
+const {
+  tag = "section",
+  preset = "default",
+  variant,
+  cols = 1,
+  split,
+  bg,
+  padding,
+  paddingBlock,
+  paddingInline,
+  paddingTop,
+  paddingBottom,
+  paddingLeft,
+  paddingRight,
+  margin,
+  marginBlock,
+  marginInline,
+  marginTop,
+  marginBottom,
+  marginLeft,
+  marginRight,
+  gap = "1.5rem",
+  rowGap,
+  columnGap,
+  border,
+  borderColor,
+  borderWidth,
+  borderStyle,
+  textColor,
+  backgroundColor,
+  textAlign = "left",
+  alignItems = "stretch",
+  justifyContent = "start",
+  width,
+  minHeight,
+  maxWidth,
+  className = "",
+  ...htmlAttributes
+} = Astro.props as Props;
+
+const validTags = ["section", "div", "article", "aside", "nav", "header", "footer", "main"];
+const SectionTag = validTags.includes(tag) ? tag : "section";
+
+const usedVariant = variant ?? preset;
+
+const presetConfig: Record<string, { padding: string; bg: string; text: string; border: boolean; borderColor: string; borderWidth: string; borderStyle: string }> = {
+  default: { padding: "1.25rem", bg: "transparent", text: "inherit", border: false, borderColor: "#3a3a3a", borderWidth: "1px", borderStyle: "solid" },
+  primary: { padding: "2rem 1.25rem", bg: "var(--color-primary, #704018)", text: "#fff", border: true, borderColor: "var(--color-primary-dark, #38200F)", borderWidth: "2px", borderStyle: "solid" },
+  secondary: { padding: "1.5rem 1.25rem", bg: "var(--color-secondary, #414141)", text: "#E8DCC7", border: true, borderColor: "var(--color-secondary-dark, #303030)", borderWidth: "1px", borderStyle: "dashed" },
+  accent: { padding: "2rem 1.25rem", bg: "var(--color-accent, #A82B22)", text: "#fff", border: false, borderColor: "var(--color-accent-dark, #704018)", borderWidth: "1px", borderStyle: "solid" },
+};
+
+const current = presetConfig[usedVariant] ?? presetConfig.default;
+
+const splitMap: Record<string, string> = {
+  "1/2": "1fr 1fr",
+  "1/3": "1fr 2fr",
+  "2/3": "2fr 1fr",
+  "1/4": "1fr 3fr",
+  "3/4": "3fr 1fr",
+  "2/5": "2fr 3fr",
+  "3/5": "3fr 2fr",
+  "1/5": "1fr 4fr",
+  "4/5": "4fr 1fr",
+  "3/1": "3fr 1fr",
+  "1/1": "1fr 1fr",
+};
+
+const resolvedBg = backgroundColor || bg || current.bg;
+const resolvedText = textColor || current.text;
+const resolvedBorder = border ?? current.border;
+const resolvedBorderColor = borderColor || current.borderColor;
+const resolvedBorderWidth = borderWidth || current.borderWidth;
+const resolvedBorderStyle = borderStyle || current.borderStyle;
+const resolvedPadding = padding || current.padding;
+
+let gridTemplate: string | undefined;
+if (typeof cols === "number" && cols > 1) {
+  if (cols === 2 && split && splitMap[split]) {
+    gridTemplate = splitMap[split];
+  } else {
+    gridTemplate = `repeat(${cols}, 1fr)`;
+  }
+}
+
+const alignMap: Record<string, string> = { start: "start", center: "center", end: "end", stretch: "stretch", baseline: "baseline" };
+const justifyMap: Record<string, string> = { start: "start", center: "center", end: "end", between: "space-between", around: "space-around", evenly: "space-evenly" };
+
+const style = [
+  `padding: ${paddingTop || resolvedPadding};`,
+  paddingBlock ? `padding-block: ${paddingBlock};` : "",
+  paddingInline ? `padding-inline: ${paddingInline};` : "",
+  paddingBottom ? `padding-bottom: ${paddingBottom};` : "",
+  paddingLeft ? `padding-left: ${paddingLeft};` : "",
+  paddingRight ? `padding-right: ${paddingRight};` : "",
+  margin ? `margin: ${margin};` : "",
+  marginBlock ? `margin-block: ${marginBlock};` : "",
+  marginInline ? `margin-inline: ${marginInline};` : "",
+  marginTop ? `margin-top: ${marginTop};` : "",
+  marginBottom ? `margin-bottom: ${marginBottom};` : "",
+  marginLeft ? `margin-left: ${marginLeft};` : "",
+  marginRight ? `margin-right: ${marginRight};` : "",
+  `background-color: ${resolvedBg};`,
+  `color: ${resolvedText};`,
+  resolvedBorder ? `border: ${resolvedBorderStyle} ${resolvedBorderWidth} ${resolvedBorderColor};` : "",
+  width ? `width: ${width};` : "",
+  minHeight ? `min-height: ${minHeight};` : "",
+  maxWidth ? `max-width: ${maxWidth};` : "",
+  `text-align: ${textAlign};`,
+  gridTemplate ? `grid-template-columns: ${gridTemplate};` : "",
+  `gap: ${gap};`,
+  rowGap ? `row-gap: ${rowGap};` : "",
+  columnGap ? `column-gap: ${columnGap};` : "",
+  `align-items: ${alignMap[alignItems] ?? "stretch"};`,
+  `justify-content: ${justifyMap[justifyContent] ?? "start"};`,
+].filter(Boolean).join(" ");
+
+const classes = [
+  "section-component",
+  usedVariant ? `section-${usedVariant}` : "",
+  cols && cols > 1 ? "grid" : "block",
+  cols && cols > 1 ? "grid-cols-1" : "",
+  textAlign ? `text-${textAlign}` : "",
+  className,
+].filter(Boolean).join(" ");
+---
+
+<SectionTag class={classes} style={style} {...htmlAttributes}>
+  <slot />
+</SectionTag>

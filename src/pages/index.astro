@@ -1,0 +1,152 @@
+---
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
+import { Button } from '@starwind/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@starwind/card';
+import Section from '@components/Section/Section.astro';
+import Wrapper from '@components/Section/Wrapper.astro';
+
+import bateau from '@assets/images/accueil/bateau-qui-navigue-sur-eau.jpg';
+import fraise from '@assets/images/accueil/fraise.png';
+import salahuddin from '@assets/images/accueil/salahuddin-jitmoud.jpg';
+import jardin from '@assets/images/accueil/la-parabole-du-jardin.png';
+import rappel from '@assets/images/accueil/un-rappel-puissant.png';
+import oiseau from '@assets/images/accueil/oiseau.png';
+import quran from '@assets/images/accueil/quran-6-33.png';
+import enfant from '@assets/images/accueil/papillon.jpg';
+import tiktok from '@assets/images/accueil/video-tiktok-le-bateauw.jpg';
+import couv1 from '@assets/images/logo-brillant-sur-ciel.jpg';
+import couv2 from '@assets/images/accueil/papillon.jpg';
+import couv3 from '@assets/images/accueil/oiseau.png';
+import pardon from '@assets/images/accueil/pas-en-colere-contre-toi.jpg';
+---
+
+<BaseLayout title="Dans le Bateau" description="Le Bateau, c’est une voie vers Dieu.">
+  <Section bg="bg-[#292929]" padding="py-8 px-6" textColor="#E8DCC7">
+    <Wrapper maxWidth="max-w-3xl" className="mx-auto space-y-10">
+
+      <h1 class="text-center text-5xl md:text-7xl font-serif font-bold tracking-wide bg-gradient-to-r from-green-300 to-amber-400 bg-clip-text text-transparent">
+        DANS LE BATEAU
+      </h1>
+
+      <Image src={bateau} alt="Un bateau qui navigue sur une mer agitée" class="w-full rounded" />
+
+      <Section bg="bg-[#414141]" padding="p-6" textColor="#E8DCC7">
+        <p class="text-sm leading-snug">Le Bateau, c’est une voie vers Dieu. On y monte allégé, en laissant au port les bagages trop lourds : culpabilités, remords, fardeaux inutiles. Non pas pour fuir, mais pour repartir à neuf. Le croyant n’est pas un bâtisseur encombré d’outils cherchant à remodeler le monde à sa maniere. Il est un voyageur, attentif, en attente d’indications, sans chercher à s’imposer. Le rappel a sa place, l’écrasement non : c’est une affaire d’équilibre. Être sur le bateau, c’est aussi reconnaître qu’un message résonne juste. Et s’il sonne juste, c’est qu’il vient de Dieu. Oui, même à travers mes paradoxes et mes aspérités, il y a là une œuvre divine, déroutante parfois, mais bien réelle. Monter à bord, c’est reprendre la route vers Dieu. C’est accepter que Dieu ne rentre pas dans nos cadres, qu’Il est insondable, libre, et que Son appel ne se ferme à personne. Lorsque nous sommes en mer, détail essentiel, nous ne décidons pas des mouvements du bateau. Le bateau s'adapte à la mer ; ce n’est pas elle qui s'adapte à nous. Peut-être le fera-t-elle le jour où la foi du bateau sera pleine et entière. En attendant, on avance, humblement, dans cette condition de passagers. Dans nos vies, il en va de même : nous choisissons rarement la trajectoire exacte. Ce sont souvent les événements qui tiennent la barre, bien au-delà de notre volonté. Le libre arbitre existe, certes, mais il pèse peu face à l’immensité ; nous sommes le fruit de ce qui nous dépasse. Sur ce bateau, tous retrouvent la même mesure. Personne n’est au-dessus, personne en dessous. Nous avançons ensemble, dans une direction commune. Le jugement appartient à Dieu seul ; Lui seul connaît le poids des cœurs. Mer calme ou vagues agitées, nous nous adaptons, convaincus qu’il y a une sagesse et un bien derrière chaque mouvement. Alors si tu t’attends à me voir naviguer droit, sans écarts ni hésitations, peut-être est-ce la vie que tu juges désordonnée… ou peut-être ton regard qu’il faut ajuster. Restons lucides sur ce que nous sommes, sur la raison de notre présence ici, et sur le chemin que nous désirons vraiment emprunter.</p>
+      </Section>
+
+      <Image src={jardin} alt="La parabole du jardin" class="w-full rounded" />
+
+      <Section cols={2} split="2/1" gap="gap-6" bg="bg-[#49252E]" padding="p-6" textColor="#E8DCC7">
+        <Section bg="transparent" padding="p-0">
+          <p class="text-sm leading-snug">Ne reste pas planté devant le jardin en plein hiver ❄️, à attendre la fraise 🍓. Elle viendra, mais pas maintenant. Prends ce que la saison t’offre: le citron , la pomme 🍎, la noix 🌰. Aime les fruits d’hiver pour ce qu’ils sont, car chaque chose a son temps et son goût ⏳🍇. Il est des fruits qui ne se croisent pas dans la saison. La cerise rougit sous le soleil d’été 🍒, tandis que l’orange mûrit dans le froid 🍊. Si tu aimes l’une et refuses l’autre, sache pourtant qu’elles peuvent pousser dans le même jardin. Ce n’est pas le sol qui change, mais le moment. Le jardin d'un homme est vaste 🌍. Parcours-le humblement. Ne sois pas impressionné par la taille de ses monts 🌄, ni troublé par la profondeur de ses eaux 🌊. Ne juge pas un jardin à sa saison. Même nu en apparence, il travaille en silence 🌱. Prends du vent ce qu’il t’apporte 🌬️, bon gré mal gré, car rien ne traverse le jardin sans raison. Ainsi, ne réclame pas toujours la même douceur, ni la même récolte au même instant. Tout a un but, et tout porte un sens.</p>
+          <p class="text-sm leading-snug">L'exemple de la fraise = les émotions vives. 🍓❤️ Elle ressemble à un cœur rouge posé sur la terre. Sa couleur est intense, sa chair est tendre, et rien n’est dissimulé. Même ses graines sont à l’extérieur, comme si tout devait être visible, exprimé, ressenti. La fraise ne cache rien et ne retient pas ses élans. Elle incarne l’amour, le désir, la joie, parfois l’excès. C’est le fruit des émotions franches, de la sensibilité assumée, du cœur qui bat fort et qui s’exprime sans retenue.</p>
+        </Section>
+        <Image src={fraise} alt="Fraise" class="w-40" />
+      </Section>
+
+      <Section cols={2} split="1/3" gap="gap-6" bg="bg-[#303030]" padding="p-6" textColor="#E8DCC7">
+        <Image src={salahuddin} alt="Salahuddin Jitmoud" class="w-full rounded" />
+        <Section bg="transparent" padding="p-0">
+          <p class="text-sm leading-snug">Puisses-tu entendre ceci : Dieu ne fait pas de sélection à l’entrée. Il accueille le petit pécheur, le pécheur ordinaire, le grand pécheur. Alors je t’invite à revenir vers Dieu. Si une simple feuille morte, portée par le vent comme moi, peut entrouvrir la fenêtre de la foi, alors toi aussi tu le peux 🍂🌬️🪟✨. Et puisque, sans l’avoir voulu, je finis par servir d’exemple, puisque le chemin vers Dieu est ouvert à tous, je suis forcément un peu toi. Je suis le monde d’aujourd’hui. On peut se comprendre, que tu viennes du village d’à côté ou du pays voisin : le rond-point du repentir est le même pour tous, et nous avons tous rendez-vous. À l’heure où certains ont fait de Dieu un policier furieux, prêt à sanctionner la moindre erreur, le moindre échec 🚨, Son Messager, lui, marche sur Sa terre, sous tes yeux . Il porte tes failles, tes ratés, tes contradictions, parfois même tes méchancetés, et malgré tout Dieu le nourrit et le soutient devant toi 🍞✨. Alors dis-moi… qu’as-tu vraiment compris de Ses paroles ?</p>
+          <p class="text-sm leading-snug">Dieu ne dresse pas un podium 🏆🚫 entre “les meilleurs” et “les moins bons”. Il éprouve plutôt des chemins 🛤️ : nos méthodes 🧭, nos intentions 🎯, la sincérité du cœur ❤️, et la tenue de nos convictions 🧱✨. Revenons au point de départ 🔁📌 : qu’un homme ait mille fautes à son actif 📉, et qu’en face de lui un autre n’en ait que dix 🔟, tous deux restent, devant Dieu , dans la même situation de culpabilité ⚖️. Ils s’exposent au même risque majeur ⚠️ : celui de la perdition, ce que le Coran nomme la Grande Perte , c’est-à-dire un basculement vers un enfer🔥⛓️. Et tous deux ont un besoin impératif : la miséricorde de Dieu 🤲✨🌧️.</p>
+        </Section>
+      </Section>
+
+      <Section cols={2} split="1/3" gap="gap-6" bg="bg-[#303030]" padding="p-6" textColor="#E8DCC7">
+        <Image src={salahuddin} alt="Salahuddin Jitmoud" class="w-full rounded" />
+        <Section bg="transparent" padding="p-0">
+          <p class="text-sm leading-snug">🕯️Salahuddin Jitmoud avait seulement 22 ans lorsque son chemin a croisé celui de son meurtrier, un soir d’avril 2015. Ce jeune livreur de pizzas, de confession musulmane, effectuait ce qui devait être sa dernière livraison lorsqu’il a été poignardé à mort. Trois personnes ont été mêlées à cette affaire tragique, mais le grand jury a considéré que la responsabilité principale incombait à l’une d’entre elles. Deux ans après les faits, Trey Alexander Relford, alors âgé de 24 ans, a reconnu sa culpabilité lors de son procès en octobre. Il a plaidé coupable pour complicité de meurtre, complicité de vol et tentative de falsification de preuves 🧾🔒.</p>
+          <p class="text-sm leading-snug">⚖️ Peu avant le rendu du verdict, Abdul-Munim Sombat Jitmoud, père de la victime, a été appelé à la barre pour témoigner. Il a pris la parole pour annoncer un choix rare: celui du pardon accordé à Trey Alexander Relford. Il a rappelé que, dans l’islam, le pardon représente l’une des formes les plus élevées de bienfaisance. 🕊️ S’adressant directement à l’accusé, il a poursuivi sans colère : « Je ne ressens aucune haine envers toi. Ma colère ne t’est pas destinée. Elle est dirigée contre le diable, celui qui t’a égaré et t’a conduit à commettre un acte d’une telle atrocité ». Il a ensuite précisé que ce pardon était accordé « au nom de Salahuddin Jitmoud, et au nom de sa mère », disparue en 2013 🌹.😢 L’intensité de ce moment a profondément marqué la salle d’audience. À l’issue de cette déclaration, la juge, visiblement submergée par l’émotion et les larmes aux yeux, a ordonné la suspension de l’audience. A sa sortie, Sombat Jitmoud a expliqué sa décision en rappelant que, selon la tradition musulmane, Dieu est miséricordieux et que les portes de Sa Miséricorde sont ouvertes à tous, souhaitant pour Trey Alexander Relford de faire de bonnes actions qui le conduiront, espère-t-il, à Dieu et au Paradis « avec Salahuddin ».</p>
+          <p class="text-sm leading-snug">Trey Alexander Relford encourait la peine de mort mais la famille Jitmoud a accepté un accord lui permettant d’éviter la peine capitale. Il a été condamné à 31 ans de prison.</p>
+        </Section>
+      </Section>
+
+      <Section cols={2} split="3/1" gap="gap-6" bg="bg-[#49252E]" padding="p-6" textColor="#E8DCC7">
+        <Section bg="transparent" padding="p-0">
+          <p class="text-sm leading-snug">Voici une illustration saisissante de ce dont l’être humain est capable lorsqu’il choisit le pardon. Un exemple d’une force rare, qui vaut à la fois à décharge et à charge. Car si un homme, meurtri au plus profond, est capable d’un pardon d’une telle ampleur, que dire alors du pardon que Dieu, dans Sa miséricorde infinie, est capable d’accorder ? Cet homme ne prétend pas dépasser Dieu : il suit Ses conseils. Il refuse d’emprunter la voie de la colère et maîtrise sa tristesse par la confiance qu’il place en Dieu, rappelant ainsi que le pardon humain n’est qu’un reflet, fragile mais sincère, du pardon divin. Et la vie est une histoire de Miséricorde.</p>
+        </Section>
+        <Image src={pardon} alt="Pas en colère contre toi" class="w-full rounded" />
+      </Section>
+
+      <Image src={rappel} alt="Un rappel puissant" class="w-full rounded" />
+
+      <Section bg="bg-[#303030]" padding="p-6" textColor="#E8DCC7">
+        <p class="text-sm leading-snug">Oui, c’est Lui qui a créé le lion et la panthère, et c’est Lui qui a créé le poisson rouge et le papillon. C’est Lui qui colore les feuilles d’automne 🍂, et c’est Lui qui rend la branche d’hiver nue. C’est Lui qui fait tomber la pluie 🌧️, et c’est Lui qui fait tomber le projectile ☄️. C’est Lui qui a créé les couleurs : le bleu et le rose, le noir et le blanc, les ténèbres et la lumière. Nul ne peut prétendre avoir cerné l’Éternel, l’Insondable. Créateur des vents doux, utiles aux hommes, et Créateur des tempêtes dévastatrices, utile aux hommes. Le plus Sage des sages. ✨📖 C’est Lui, le Créateur 🤲🕯️.</p>
+        <p class="text-sm leading-snug">À l’heure où les hommes expliquent les limites de Dieu, les frontières de Sa création et les normes qu’elle devrait respecter, le monde, lui, trace son propre chemin sans jamais se justifier 🌊🛤️. La réalité n’attend pas notre validation. Elle existe, avance, se transforme, indifférente à nos débats, nos dogmes et nos cadres sociaux. La création n’est pas seulement plurielle et colorée, elle est inconfortable pour l’esprit humain 🎭🌈. Plus on l’observe sérieusement, plus elle détruit nos certitudes faciles sur Dieu, la morale, l’ordre et le sens. Et cela n’est pas une opinion, mais un constat issu de l’observation rigoureuse du vivant 🧠🌿.</p>
+      </Section>
+
+      <blockquote class="border-l-4 border-primary pl-4 italic text-amber-200 text-center">Quran 94 : 6 — À côté de la difficulté se trouve une facilité.</blockquote>
+
+      <Section bg="bg-[#49252E]" padding="p-6" textColor="#E8DCC7">
+        <p class="text-sm leading-snug">La fleur la plus fragile perce le béton sans demander la permission 🌸, l’arbre immobile discute avec le vent et finit par le faire taire 🍃🌬️, certaines plantes ne fleurissent qu’après l’incendie. La graine se décompose pour germer. La mante religieuse peut s’accoupler puis dévorer son partenaire , le mâle hippocampe porte les petits pendant que la femelle s’éloigne , la veuve noire promet l’union et signe la mort . Le champignon décide du sort des forêts alors qu’il vit sous terre , le venin soigne quand il est dosé , la nuit nourrit la lumière et le silence enseigne plus que le bruit . Tout proclame sans prêcher que l’ordre cache le chaos, que la douceur cache la violence, que la mort prépare la vie, et que celui qui prétend enfermer Dieu dans une règle n’a jamais vraiment observé ce monde 👁️</p>
+        <p class="text-sm leading-snug">Et je ne disconviens pas du fait que des esprits étriqués et réducteurs soient troublés face à un tel constat 🤯🔒. Ce qui est vaste dérange ce qui est étroit, et ce qui est multiple déstabilise ceux qui exigent des cadres simples 🧠🛑. Mais la création ne cherche pas à rassurer. Elle expose, elle révèle, elle dépasse 👁️🌌. J’ai encore beaucoup de paroles à vous confier 🗣️📜, car mon histoire porte ses fardeaux ⚖️, mais aussi ses clés 🗝️ : un lot d’épreuves 🧱, un lot d’explications 🧠, des bénédictions cachées 🌿✨, et des énigmes dressées comme des veilleurs dans la nuit 🌌👁️. C’est pour cela que j’ai façonné le concept du Bateau ⛵🌊, non comme un symbole vide, mais comme une traversée. Et le ticket pour le voyage n’a aucun cout 🪙🚫 : il se paie en sincérité 🤲, en conscience lucide de notre monde 🌍👁️, de notre état ⚖️, et de notre objectif 🎯🔥. Montez à bord et suivez-moi sur ce chemin que je trace depuis de longues années. ⛵️✨ Reconnaissez ici le bienfait de Dieu sur vous, l’étendue de Sa miséricorde, et soutenez-moi. 🤲🌊</p>
+      </Section>
+
+      <Image src={oiseau} alt="Oiseau" class="w-48 mx-auto" />
+
+      <Section bg="bg-[#17334C]" padding="p-6" textColor="#E8DCC7">
+        <p class="text-sm leading-snug">Une sourate s’appelle Les Fourmis 🐜, une autre L’Éléphant 🐘. Comme si Dieu glissait un rappel limpide : la valeur ne se pèse ni a la force💪🚫, ni a la taille 📏 Dieu ne constate pas le monde comme le monde se constate 👁️🌍. Il est au-dessus de nos considérations, et Il nous l’enseigne à travers le Livre tout entier📖.</p>
+        <p class="text-sm leading-snug">Nos codes 🏷️, nos honneurs 👑, nos hontes 😔, nos victoires 🏆 et nos échecs, auprès de Dieu, tout cela n’est pas défini comme nous le définissons. Je pense que Dieu se rit des conclusions et des priorités des gens de notre temps.</p>
+        <blockquote class="border-l-4 border-amber-500 pl-4 italic text-amber-200">Quran 2 : 26 — Dieu n'a pas honte de présenter en exemple un moustique ou quoi que ce soit au-dessus.</blockquote>
+        <p class="text-sm leading-snug">Comprenons les règles du Jeu 🎲📜 : celui qui a dix péchés à son compteur encourt le même risque que celui qui en a mille. Le pardon est dans les mains de Dieu seul 🕊️👑, et un seul acte ☝️💥 peut parfois suffire à précipiter une chute 🕳️⬇️. Et celui des dix péchés 🔟 porte dans son âme la même épreuve 🧪🫀 et la même espérance 🌅🤍 que celui des mille.</p>
+        <p class="text-sm leading-snug">Ce qui est honteux pour nous 😔🙈 ne l’est pas forcément dans le Royaume de Dieu 👑✨. De même que l’animal n’a aucune honte de sa nudité 🐒🌿 devant les hommes 👥. Celui des dix 🔟 doit aider celui des mille 🤝, et celui des mille doit aider celui des dix 🔟🤝. Et celui qui se réjouit de la chute d’un autre 🍿⬇️ ne peut prétendre à l’agrément de Dieu 🚫👑. Meme si dans sa chute il s'eloignerez de la face de Dieu.</p>
+        <p class="text-sm leading-snug">Soyez vous-mêmes, et vivez en paix les uns avec les autres 🤝🕊️. Ne maquillez pas vos histoires par honte du chemin que vous avez emprunté, comme si l’erreur ne vous concernait pas 🎭🚫. Parfois, nous sommes pris dans l’orgueil sans même le voir 👀🪞: ce n’est pas toujours un orgueil habillé d’arrogance 😤, mais un orgueil plus discret, déguisé en illusions rassurantes 🛏️✨. Parfois, la peur du miroir nous enferme dans le déni. 🪞🚪</p>
+        <blockquote class="border-l-4 border-amber-500 pl-4 italic text-amber-200">Quran 16 : 61 — Si Dieu sanctionnait les gens pour leurs injustices, Il ne laisserait sur elle (la terre) aucune créature. Mais Il leur accorde un délai jusqu'à un terme fixé. Puis, quand vient leur terme, ils ne peuvent ni le retarder d'une heure, ni l'avancer.</blockquote>
+        <p class="text-sm leading-snug">Maintenant vous le savez : Dieu se suffit à Lui-même, au-delà de tous les mondes. Il n’a pas besoin d’être défendu, et nul ne peut Lui nuire en quoi que ce soit. Ce qu’Il attend de vous, c’est une prise de conscience, une méthode à mettre en place, une purification comme direction intérieure. Comprendre cela, c’est se préserver du châtiment qui vient pour redresser et remettre sur le droit chemin. Dans l'Evangile de Matthieu, nous lisons:</p>
+        <blockquote class="border-l-4 border-amber-500 pl-4 italic text-amber-200">Matthieu 25:35 — Car j'ai eu faim, et vous m'avez donné à manger; j'ai eu soif, et vous m'avez donné à boire; j'étais étranger, et vous m'avez recueilli; j'étais nu, et vous m'avez vêtu; j'étais malade, et vous m'avez visité; j'étais en prison, et vous êtes venus vers moi...</blockquote>
+        <blockquote class="border-l-4 border-amber-500 pl-4 italic text-amber-200">Quran 56 : 41 — Et les gens de la gauche; que sont les gens de la gauche? Dans un vent brûlant et une eau bouillante...</blockquote>
+        <blockquote class="border-l-4 border-amber-500 pl-4 italic text-amber-200">Quran 56 : 38 — pour les gens de la droite, Beaucoup parmi les premières générations. et une multitude parmi les derniers.</blockquote>
+      </Section>
+
+      <h2 class="text-center text-2xl font-bold text-gray-100 mt-8">Le Message du Bateau</h2>
+      <Section bg="bg-[#985A1D]" padding="p-6" textColor="#E8DCC7">
+        <p class="text-sm leading-snug">Le message du Bateau ⛵️, c’est d’abord et avant tout le retour au message du Qur'an 📖, sans filtres ni interprétations humaines ajoutées. C’est l’appel à revenir aux Livres révélés avec la conscience qu’ils proviennent tous d’une même source divine et qu’ils forment, au fond, un seul Livre 📚✨. L’idée d’une falsification des révélations antérieures ne tient pas face au texte coranique lui-même : le Qur'an dénonce surtout les altérations de sens, les interprétations forcées et ceux qui prétendent au Livre ce qu’il ne dit pas ⚠️. Et ce phénomène n’est pas propre aux traditions passées : on l’observe aussi aujourd’hui dans ce qu’on appelle l’“islam”, avec la multitude d’interprétations et de traductions divergentes du Qur'an, qui témoignent exactement du même mécanisme 🧩. Juste en bas, vous trouverez l’archive d’un débat entre un imam instruit et moi 🎙️ : nous y discutons des révélations antérieures, et force est de constater que ses réponses ne sont pas très glorieuses… car la vérité finit toujours par se distinguer du mensonge ⚖️ la vérité est stable, tandis que le mensonge reste fragile et instable. 🌊📖</p>
+      </Section>
+
+      <div class="flex justify-center">
+        <Image src={tiktok} alt="Vidéo TikTok" class="w-2/3 rounded" />
+      </div>
+
+      <div class="text-center py-4">
+        <div class="inline-block px-8 py-4 bg-red-900/60 border border-red-700 rounded">
+          <h2 class="text-amber-100 font-serif text-2xl tracking-wide">LES ARTICLES :</h2>
+        </div>
+      </div>
+
+      <Wrapper className="grid gap-4 sm:grid-cols-3 items-stretch">
+        <Card class="flex flex-col h-64 relative overflow-hidden" style={`background-image: url(${couv1.src}); background-size: cover; background-position: center;`}>
+          <div class="absolute inset-0 bg-black/50"></div>
+          <CardHeader class="relative z-10">
+            <CardTitle class="text-white">Le Livre de Dieu</CardTitle>
+          </CardHeader>
+          <CardContent class="flex flex-col flex-1 relative z-10">
+            <Button href="/le-livre-de-dieu" variant="outline" class="w-full mt-auto">Lire</Button>
+          </CardContent>
+        </Card>
+        <Card class="flex flex-col h-64 relative overflow-hidden" style={`background-image: url(${couv2.src}); background-size: cover; background-position: center;`}>
+          <div class="absolute inset-0 bg-black/50"></div>
+          <CardHeader class="relative z-10">
+            <CardTitle class="text-white">Les Messagers</CardTitle>
+          </CardHeader>
+          <CardContent class="flex flex-col flex-1 relative z-10">
+            <Button href="/messagers" variant="outline" class="w-full mt-auto">Lire</Button>
+          </CardContent>
+        </Card>
+        <Card class="flex flex-col h-64 relative overflow-hidden" style={`background-image: url(${couv3.src}); background-size: cover; background-position: center;`}>
+          <div class="absolute inset-0 bg-black/50"></div>
+          <CardHeader class="relative z-10">
+            <CardTitle class="text-white">Dans le Bateau</CardTitle>
+          </CardHeader>
+          <CardContent class="flex flex-col flex-1 relative z-10">
+            <Button href="/" variant="outline" class="w-full mt-auto">Lire</Button>
+          </CardContent>
+        </Card>
+      </Wrapper>
+
+      <p class="text-sm text-gray-400 text-center">Je suis pour beaucoup un cas étrange… mais Toi, Tu es mon puissant refuge. (Psaumes 71:7) 🛡️🙏</p>
+
+      <p class="text-sm text-muted-foreground text-center">© . le site est une migration de https://www.danslebateau.com/</p>
+    </Wrapper>
+  </Section>
+</BaseLayout>

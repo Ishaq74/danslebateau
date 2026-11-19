@@ -1,0 +1,15 @@
+---
+import { Image } from 'astro:assets';
+import logo from '@assets/images/logo.png';
+
+interface Props {
+  siteName?: string;
+  href?: string;
+  class?: string;
+}
+const { siteName = "", href = "/", class: className } = Astro.props;
+---
+<a href={href} class:list={["inline-flex shrink-0 items-center gap-2 font-semibold text-lg", className]}>
+  <Image src={logo} alt="Logo" class="h-8 w-auto" />
+  {siteName}
+</a>
