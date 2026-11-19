@@ -1,8 +1,12 @@
 ---
 import Band from "@components/ui/Band.astro";
+import { Image } from "astro:assets";
+import illustration from "@assets/images/le-livre-de-dieu/homme-chemin-nuit-lanterne.jpg";
 import Quote from "@components/ui/Quote.astro";
 ---
 <Band id="evangile" tone="navy">
+  <Image src={illustration} alt="Personne avançant sur un chemin nocturne avec une lanterne" class="h-56 w-full rounded-md object-cover md:h-full md:min-h-72" />
+  <div class="space-y-4">
   <h2 class="text-center">L'Évangile</h2>
   <p>Contrairement à une idée bien ancrée 🧠🧱, « Évangile » n’est pas, à l’origine, le nom d’un livre. C’est avant tout un mot, issu du grec εὐαγγέλιον, qui signifie « bonne nouvelle » 🕊️📣. De la même manière, le Qurʾān n’est pas d’abord un “titre”, mais un terme arabe signifiant récation, lecture proclamée, et aussi rassemblement 🔊📖🤲.</p>
   <p>ʿĪsā/Jésus avait douze apôtres 🌿👣, et le mot Injīl apparaît douze fois dans le Coran 📜🔢. Hasard ? Dans le pays de Dieu, le hasard n’a pas d’adresse 🚫🎲.</p>
@@ -32,4 +36,5 @@ import Quote from "@components/ui/Quote.astro";
   <Quote cite="Quran 19 : 34">Voilà Jésus, fils de Marie : parole de vérité, à propos de laquelle ils doutent.</Quote>
   <Quote cite="Quran 43 : 57">Quand on a présenté l'exemple du fils de Marie, ton peuple s'en est détourné.</Quote>
   <Quote cite="Quran 19 : 33">Que la paix soit sur moi le jour où je naquis, le jour où je mourrai, et le jour où je serai ressuscité vivant.</Quote>
+  </div>
 </Band>
