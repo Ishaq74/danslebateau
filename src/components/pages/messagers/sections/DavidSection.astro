@@ -3,18 +3,24 @@ import Band from "@components/ui/Band.astro";
 import Quote from "@components/ui/Quote.astro";
 import { Image } from "astro:assets";
 import illustration from "@assets/images/messagers/exemple-de-daoud.png";
+import prayer from "@assets/images/messagers/priere-islamique.png";
 ---
 <section id="david" aria-labelledby="david-title" class="scroll-mt-28 space-y-5">
   <h2 id="david-title" class="text-center uppercase tracking-wide">David (Daoud)</h2>
   <Band tone="amber" split="1/3">
-    <Image src={illustration} alt="Illustration associée au récit de David" class="mx-auto w-full rounded-lg" />
+    <div class="space-y-3">
+      <Image src={illustration} alt="Illustration associée au récit de David" class="mx-auto w-full rounded-lg" />
+      <Image src={prayer} alt="Une personne en prière" class="w-full rounded-lg" />
+    </div>
     <div class="space-y-4">
-      <Quote cite="Coran 17:55">« Nous avons favorisé certains prophètes par rapport à d'autres. Nous avons donné à David les Psaumes. »</Quote>
-      <p>David (Daoud) est un Messager de Dieu qui traverse l’épreuve, la vulnérabilité et la persévérance. Le Livre des Psaumes donne à lire ses appels au pardon, sa lucidité sur ses fautes et sa confiance en Dieu.</p>
-      <p>Parmi les passages cités : Psaume 51:5 — « Car je reconnais mes transgressions, et mon péché est constamment devant moi » ; Psaume 69:6 — « Que ceux qui espèrent en toi ne soient pas confus à cause de moi » ; Psaume 119:176 — « Je me suis égaré comme une brebis perdue ; cherche ton serviteur. »</p>
-      <Quote cite="Coran 38:24">« David se demanda s’il avait rendu le bon jugement. Il implora alors son Seigneur pour le pardon, s’inclina et se repentit. »</Quote>
-      <Quote cite="Coran 12:53">« Je ne m'innocente pas, car l'âme est instigatrice du mal, à moins que mon Seigneur ne me fasse miséricorde. »</Quote>
-      <p>Le récit souligne le retour sur soi et le refus de se déclarer pur par ses propres moyens.</p>
+      <p>David (Daoud) est à la fois roi, prophète et bénéficiaire des Psaumes. Le Coran le cite parmi les prophètes auxquels Dieu a accordé une révélation particulière.</p>
+      <Quote cite="Coran 17:55">Nous avons favorisé certains prophètes par rapport à d'autres. Et Nous avons donné les Psaumes à David.</Quote>
+      <p>Le récit de David insiste aussi sur la justice, le jugement et la nécessité de revenir vers Dieu lorsque l'on a commis une erreur.</p>
+      <Quote cite="Coran 38:24–25">David comprit que Nous l'avions mis à l'épreuve. Il demanda pardon à son Seigneur, se prosterna et se repentit. Nous lui pardonnâmes.</Quote>
+      <p>Dans les Psaumes, la voix du croyant ne cherche pas à se déclarer irréprochable : elle expose ses fautes, demande à être redressée et place son espérance en Dieu.</p>
+      <Quote cite="Psaume 51:5">Car je reconnais mes transgressions, et mon péché est constamment devant moi.</Quote>
+      <Quote cite="Psaume 119:176">Je suis errant comme une brebis perdue : cherche ton serviteur, car je n'oublie point tes commandements.</Quote>
+      <p>Le récit met ainsi en lumière la lucidité sur soi, la responsabilité du jugement et le repentir.</p>
     </div>
   </Band>
 </section>
