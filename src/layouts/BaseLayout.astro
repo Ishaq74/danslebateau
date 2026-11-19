@@ -9,54 +9,69 @@ interface Props {
   title?: string;
   description?: string;
 }
-
 const { title = "Dans le bateau", description = "" } = Astro.props;
-
 const links: NavLink[] = [
   { label: "Accueil", href: "/" },
   {
     label: "Le Livre de Dieu",
     href: "/le-livre-de-dieu",
     children: [
-      { label: "La Torah", href: "/le-livre-de-dieu" },
-      { label: "L'Évangile", href: "/le-livre-de-dieu" },
-      { label: "Le Coran", href: "/le-livre-de-dieu" },
+      { label: "La Torah", href: "/le-livre-de-dieu#torah" },
+      { label: "L'Évangile", href: "/le-livre-de-dieu#evangile" },
+      { label: "Les Psaumes", href: "/le-livre-de-dieu#psaumes" },
+      { label: "Job", href: "/le-livre-de-dieu#job" },
+      { label: "Jonas", href: "/le-livre-de-dieu#jonas" },
     ],
   },
   {
     label: "Les Messagers",
     href: "/messagers",
     children: [
-      { label: "Moïse", href: "/messagers" },
-      { label: "Jésus", href: "/messagers" },
-      { label: "Muhammad", href: "/messagers" },
+      { label: "Moïse", href: "/messagers#moise" },
+      { label: "Adam", href: "/messagers#adam" },
+      { label: "David", href: "/messagers#david" },
+      { label: "Job", href: "/messagers#job" },
     ],
   },
 ];
-
 const footerNavLinks: FooterLink[] = [
   { label: "Accueil", href: "/" },
   { label: "Le Livre de Dieu", href: "/le-livre-de-dieu" },
   { label: "Les Messagers", href: "/messagers" },
 ];
 ---
-
 <html lang="fr" class="dark">
 <head>
-    <meta charset="utf-8" />
-    <Font cssVariable="--font-barlow" preload />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <title>{title}</title>
-    <meta name="description" content={description} />
+  <meta charset="utf-8" />
+  <Font cssVariable="--font-barlow" preload />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="theme-color" content="#292929" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
 </head>
 <body class="flex min-h-screen flex-col font-sans antialiased">
-    <Header siteName="Dans le bateau" links={links} />
-    <main id="main-content" class="flex-1">
-        <slot />
-    </main>
-    <Footer navLinks={footerNavLinks} showNavPrimary={false} showNavSecondary={false} showLegal={false} socialLinks={[{ name: "Nom : Sofiane Louaar", href: "#", icon: "account" }, { name: "Statut : Éditeur indépendant", href: "#", icon: "status" }, { name: "tiktok : Sofianemessager", href: "https://www.tiktok.com/@sofianemessager", icon: "tiktok" }, { name: "youtube", href: "#", icon: "mdi:youtube" }]} showSocial={true} socialHeading="À propos" copyrightText="© 2026 - Tous droits réservés" message={"Merci d’avoir pris de votre temps pour venir ici, lire, réfléchir, remettre en question, chercher la vérité. À l’heure où tout va vite, où l’on zappe en quelques secondes, le simple fait que vous restiez lire est déjà un cadeau.\n\nMerci pour votre temps, votre attention, votre confiance.\nQue Dieu guide nos cœurs vers ce qui est vrai, nous éloigne de la triche, des mensonges et des illusions, et nous rende capables d’être sincères avec Lui, avec nous-mêmes, et les uns envers les autres.\n\nBienvenue ici. Vous êtes chez vous. L’Éternel sait mieux."} />
-    <Toaster position="bottom-right" />
+  <Header siteName="Dans le bateau" links={links} />
+  <main id="main-content" class="flex-1">
+    <slot />
+  </main>
+  <Footer
+    navLinks={footerNavLinks}
+    showNavPrimary={false}
+    showNavSecondary={false}
+    showLegal={false}
+    socialLinks={[
+      { name: "Nom : Sofiane Louaar", href: "#", icon: "account" },
+      { name: "Statut : Éditeur indépendant", href: "#", icon: "status" },
+      { name: "TikTok : Sofianemessager", href: "https://www.tiktok.com/@sofianemessager", icon: "tiktok" },
+      { name: "YouTube", href: "#", icon: "mdi:youtube" },
+    ]}
+    showSocial={true}
+    socialHeading="À propos"
+    copyrightText="© 2026 - Tous droits réservés"
+    message={"Merci d’avoir pris de votre temps pour venir ici, lire, réfléchir, remettre en question, chercher la vérité. À l’heure où tout va vite, où l’on zappe en quelques secondes, le simple fait que vous restiez lire est déjà un cadeau.\n\nMerci pour votre temps, votre attention, votre confiance.\nQue Dieu guide nos cœurs vers ce qui est vrai, nous éloigne de la triche, des mensonges et des illusions, et nous rende capables d’être sincères avec Lui, avec nous-mêmes, et les uns envers les autres.\n\nBienvenue ici. Vous êtes chez vous. L’Éternel sait mieux."}
+  />
+  <Toaster position="bottom-right" />
 </body>
 </html>
