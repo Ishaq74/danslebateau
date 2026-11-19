@@ -15,13 +15,14 @@ import ArticlesSection from '@components/pages/misc/ArticlesSection.astro';
 
 import bateau from '@assets/images/accueil/bateau-qui-navigue-sur-eau.jpg';
 import jardin from '@assets/images/accueil/la-parabole-du-jardin.png';
+import baleine from '@assets/images/accueil/baleine-sous-bateau.jpg';
 import tiktok from '@assets/images/accueil/video-tiktok-le-bateauw.jpg';
 ---
-
 <BaseLayout title="Dans le Bateau" description="Le Bateau, c’est une voie vers Dieu.">
-  <Wrapper maxWidth="reading" className="mx-auto space-y-10 py-8">
+  <Wrapper maxWidth="reading" className="mx-auto space-y-10 px-4 py-8">
     <HeroSection image={bateau} alt="Un bateau qui navigue sur une mer agitée" title="Dans le Bateau" />
     <IntroSection />
+    <Image src={baleine} alt="Une baleine nage sous un bateau" class="mx-auto w-full max-w-3xl rounded-lg" />
     <Image src={jardin} alt="La parabole du jardin" class="w-full rounded-lg" />
     <JardinSection />
     <SalahuddinSection />
@@ -31,7 +32,7 @@ import tiktok from '@assets/images/accueil/video-tiktok-le-bateauw.jpg';
     <FourmisSection />
     <MessageSection />
     <div class="flex justify-center">
-      <Image src={tiktok} alt="Vidéo TikTok" class="w-full max-w-2xl rounded-lg" />
+      <Image src={tiktok} alt="Aperçu de la vidéo TikTok du Bateau" class="w-full max-w-2xl rounded-lg" />
     </div>
     <ArticlesSection />
     <p class="text-sm text-muted-foreground text-center">Je suis pour beaucoup un cas étrange… mais Toi, Tu es mon puissant refuge. (Psaumes 71:7) 🛡️🙏</p>
