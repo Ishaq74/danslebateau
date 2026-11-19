@@ -2,39 +2,42 @@
 import Band from "@components/ui/Band.astro";
 import { Image } from "astro:assets";
 import illustration from "@assets/images/le-livre-de-dieu/homme-chemin-nuit-lanterne.jpg";
+import bird from "@assets/images/le-livre-de-dieu/oiseau-blanc-coucher-soleil-neige.jpg";
+import flower from "@assets/images/le-livre-de-dieu/fleur-rose.png";
 import Quote from "@components/ui/Quote.astro";
 ---
 <Band id="evangile" tone="navy">
-  <Image src={illustration} alt="Personne avançant sur un chemin nocturne avec une lanterne" class="h-56 w-full rounded-md object-cover md:h-full md:min-h-72" />
+  <div class="space-y-3">
+    <Image src={illustration} alt="Une personne avance sur un chemin nocturne avec une lanterne" class="h-56 w-full rounded-md object-cover md:h-72" />
+    <div class="grid grid-cols-2 gap-3">
+      <Image src={bird} alt="Oiseau blanc dans la lumière du coucher du soleil" class="h-36 w-full rounded-md object-cover" />
+      <Image src={flower} alt="Fleur rose" class="h-36 w-full rounded-md object-cover" />
+    </div>
+  </div>
   <div class="space-y-4">
-  <h2 class="text-center">L'Évangile</h2>
-  <p>Contrairement à une idée bien ancrée 🧠🧱, « Évangile » n’est pas, à l’origine, le nom d’un livre. C’est avant tout un mot, issu du grec εὐαγγέλιον, qui signifie « bonne nouvelle » 🕊️📣. De la même manière, le Qurʾān n’est pas d’abord un “titre”, mais un terme arabe signifiant récation, lecture proclamée, et aussi rassemblement 🔊📖🤲.</p>
-  <p>ʿĪsā/Jésus avait douze apôtres 🌿👣, et le mot Injīl apparaît douze fois dans le Coran 📜🔢. Hasard ? Dans le pays de Dieu, le hasard n’a pas d’adresse 🚫🎲.</p>
-  <Quote cite="Quran 5 : 46">Et Nous avons envoyé après eux Jésus, fils de Marie, pour confirmer ce qu'il y avait dans la Thora avant lui. Et Nous lui avons donné l'Evangile (Al-Injil), où il y a guide et lumière.</Quote>
-  <p>Sourate Maryam (19), versets 16 à 19 : Mentionne Marie dans le Livre, lorsqu’elle se retira de sa famille en un lieu à l’orient.</p>
-  <p>Évangile Luc 1:26–31 : Au sixième mois, l’ange Gabriel fut envoyé par Dieu dans une ville de Galilée, appelée Nazareth, à une vierge fiancée à un homme nommé Joseph.</p>
-  <p>Sourate Maryam 19, versets 20 : Elle dit : « Comment aurais-je un fils, alors qu’aucun homme ne m’a touchée ? » Il dit : « Ainsi sera-t-il. Ton Seigneur a dit : Cela M’est facile. »</p>
-  <p>Évangile Luc 1 : 34–35 : Marie dit à l’ange : « Comment cela se fera-t-il, puisque je ne connais point d’homme ? » L’ange répondit : « L’Esprit Saint viendra sur toi. » 🕊️</p>
-  <p>Sourate Maryam (19:21) : « Nous ferons de lui un signe pour les gens et une miséricorde de Notre part. » — Évangile Luc 2:34 : « Cet enfant est destiné à être un signe qui provoquera la contradiction. »</p>
-  <p>Le contenu ciblé est clairement identifié, avec un taux de réussite de 100 % ✅✨. Le signal pointe juste, droit, et sans hésitation.</p>
-  <p>Parmi les discours les plus répandus, on trouve cette idée: “L’Évangile que nous avons aujourd’hui ne serait pas celui auquel le Coran arabe fait allusion”. Et pour justifier ça, on ajoute souvent: “Le vrai Évangile aurait disparu” ou “il aurait été falsifié”. Mais sans forcer, cette théorie un peu bancale nous pousse presque automatiquement à mettre au banc une quantité de versets coraniques, comme 5:68, où les Gens du Livre sont invités à se conformer à la Torah et à l’Évangile.</p>
-  <Quote cite="Coran 2 : 75">Désirez-vous qu'ils vous croient alors que certains d'entre eux ont déjà entendu la Parole de Dieu mais l'altèrent alors sciemment après l'avoir comprise ?</Quote>
-  <Quote cite="Coran 2 : 79">Malheur, donc, à ceux qui écrivent le Livre de leurs propres mains, puis disent : "Ceci vient de Dieu".</Quote>
-  <Quote cite="Coran 3 : 78">Certains d'entre eux déforment le Livre avec leur langue pour vous faire penser que cela provient du Livre, alors que cela ne provient pas du Livre.</Quote>
-  <p>Chaque verset utilisé par certains penseurs musulmans pour disqualifier les révélations antérieures parle d’altération du sens, mais jamais d’une falsification matérielle du texte 📜.</p>
-  <Quote cite="Coran 4 : 82">Ne réfléchissent-ils pas sur le Coran ? S'il provenait d'un autre que Dieu, ils y auraient trouvé de nombreuses contradictions.</Quote>
-  <Quote cite="Coran 5:43">« Pourquoi viennent-ils à toi pour obtenir un jugement alors qu’ils ont la Torah, dans laquelle se trouve le jugement d’Allah ? »</Quote>
-  <p>Parmi les recueils liés à l’Évangile, on trouve celui de Thomas 📜, un texte de 114 chapitres, qui nous rappelle les 114 sourates du coran. Un épisode célèbre de ce recueil fait écho au Coran : le récit des oiseaux façonnés puis rendus vivants 🐦.</p>
-  <Quote cite="Coran 5:110">« Quand tu façonnais de l’argile la forme d’un oiseau, puis tu soufflais dedans, et il devenait un oiseau par Ma permission… »</Quote>
-  <Quote cite="Coran 3:49">« Je façonne pour vous de l’argile comme la forme d’un oiseau, puis je souffle dedans, et il devient un oiseau vivant, par la permission de Dieu. »</Quote>
-  <p>Alors que l’Église a enfoui ce texte sous terre 🕳️📜, le Coran le fait remonter à la surface par une allusion claire et limpide ✨📖. Aucun autre texte biblique valable ne rapporte cet épisode précis de la vie de Jésus 🕊️.</p>
-  <p>Parmi les discours anti-Évangile qu’on entend dans le monde musulman, revient souvent l’idée que le vrai Injīl donné à Jésus serait un seul livre. Je suis ravi d’annoncer aux musulmans que le Coran arabe qu’ils tiennent entre leurs mains ne s’est jamais décrit comme un texte “écrit de la main de Dieu” 🚫. C’est une révélation 🕊️✨ qui passe par l’Esprit 🌬️, s’exprime d’abord à l’oral (qurʾān🔊), puis finit ensuite mise à l’écrit 📝📚.</p>
-  <Quote cite="Quran 3 : 52">Puis, quand Jésus ressentit de la dénégation de leur part, il dit : "Qui sont mes assistants envers Dieu ?" Les apôtres dirent : "Nous sommes les assistants de Dieu".</Quote>
-  <Quote cite="Quran 5 : 111">Et quand J'ai révélé aux apôtres : "Croyez en Moi et en Mon messager", ils dirent : "Nous croyons ; témoigne que nous sommes soumis".</Quote>
-  <Quote cite="Quran 61 : 14">Ô vous qui avez cru, soyez les assistants de Dieu, à l'instar de ce que Jésus, fils de Marie, dit aux apôtres.</Quote>
-  <p>La notion d’apôtres ou d’assistants de Jésus apparaît dans 6 versets du Coran, répartis en 3 sourates.</p>
-  <Quote cite="Quran 19 : 34">Voilà Jésus, fils de Marie : parole de vérité, à propos de laquelle ils doutent.</Quote>
-  <Quote cite="Quran 43 : 57">Quand on a présenté l'exemple du fils de Marie, ton peuple s'en est détourné.</Quote>
-  <Quote cite="Quran 19 : 33">Que la paix soit sur moi le jour où je naquis, le jour où je mourrai, et le jour où je serai ressuscité vivant.</Quote>
+    <h2 class="text-center">L'Évangile</h2>
+    <p>Contrairement à une idée bien ancrée, « Évangile » n’est pas, à l’origine, le nom d’un livre ni d’une collection de livres. C’est avant tout un mot issu du grec εὐαγγέλιον (euangélion), qui signifie « bonne nouvelle ». De la même manière, le Qurʾān n’est pas d’abord un titre, mais un terme arabe signifiant récitation, lecture proclamée et rassemblement. Quant à la Torah, son sens premier est la Loi, l’enseignement, la direction.</p>
+    <p>Le mot Injîl se comporte comme un mot emprunté, une étiquette unique, sans donner naissance à d’autres mots arabes liés. Le site relève que ʿĪsā/Jésus avait douze apôtres et que le mot Injîl apparaît douze fois dans le Coran. Il indique aussi que le nom ʿĪsā apparaît vingt-cinq fois dans vingt-cinq versets. Ces rapprochements numériques font partie de la lecture proposée par l'auteur.</p>
+    <Quote cite="Coran 5:46">Et Nous avons envoyé après eux Jésus, fils de Marie, pour confirmer ce qu'il y avait dans la Thora avant lui. Et Nous lui avons donné l'Évangile (Al-Injîl), où il y a guide et lumière, pour confirmer ce qu'il y avait dans la Thora avant lui, et un guide et une exhortation pour les pieux.</Quote>
+    <p>Le texte rapproche ensuite les récits de l'annonce faite à Marie dans le Coran et dans l'Évangile selon Luc.</p>
+    <Quote cite="Coran 19:16–19">Mentionne Marie dans le Livre, lorsqu’elle se retira de sa famille en un lieu à l’orient. [...] Nous lui envoyâmes alors Notre Esprit, qui se présenta à elle sous la forme d’un homme parfait. [...] « Je ne suis qu’un messager de ton Seigneur, pour te faire don d’un fils pur. »</Quote>
+    <Quote cite="Luc 1:26–31">Au sixième mois, l’ange Gabriel fut envoyé par Dieu dans une ville de Galilée, appelée Nazareth, à une vierge fiancée à un homme nommé Joseph. Le nom de la vierge était Marie. [...] « Ne crains point, Marie ; car tu as trouvé grâce devant Dieu. Et voici, tu concevras, et tu enfanteras un fils. »</Quote>
+    <Quote cite="Coran 19:20">Elle dit : « Comment aurais-je un fils, alors qu’aucun homme ne m’a touchée ? » Il dit : « Ainsi sera-t-il. Ton Seigneur a dit : Cela M’est facile. »</Quote>
+    <Quote cite="Luc 1:34–35">Marie dit à l’ange : « Comment cela se fera-t-il, puisque je ne connais point d’homme ? » L’ange répondit : « L’Esprit Saint viendra sur toi. »</Quote>
+    <p>Une partie importante de la page examine les versets employés pour soutenir l'idée que les révélations antérieures auraient été falsifiées. L'auteur distingue l'altération du sens et la falsification matérielle du texte, et invite à lire précisément les passages invoqués.</p>
+    <Quote cite="Coran 2:75">Désirez-vous qu'ils vous croient alors que certains d'entre eux ont déjà entendu la Parole de Dieu mais l'altèrent sciemment après l'avoir comprise ?</Quote>
+    <Quote cite="Coran 2:79">Malheur à ceux qui écrivent le Livre de leurs propres mains, puis disent : « Ceci vient de Dieu ».</Quote>
+    <Quote cite="Coran 3:78">Certains d'entre eux déforment le Livre avec leur langue pour vous faire penser que cela provient du Livre, alors que cela ne provient pas du Livre.</Quote>
+    <Quote cite="Coran 4:82">Ne réfléchissent-ils pas sur le Coran ? S'il provenait d'un autre que Dieu, ils y auraient trouvé de nombreuses contradictions.</Quote>
+    <Quote cite="Coran 5:43">Pourquoi viennent-ils à toi pour obtenir un jugement alors qu’ils ont la Torah, dans laquelle se trouve le jugement de Dieu ?</Quote>
+    <h3>Le récit des oiseaux d'argile</h3>
+    <p>Parmi les recueils liés à l'Évangile, la page évoque l'Évangile de Thomas et son récit des oiseaux façonnés dans l'argile par Jésus enfant. Le rapprochement est fait avec deux passages coraniques qui évoquent Jésus façonnant un oiseau d'argile par la permission de Dieu.</p>
+    <Quote cite="Évangile de Thomas, épisode des oiseaux d'argile">Jésus, enfant, façonna des moineaux avec de l'argile. Puis il frappa des mains et dit aux oiseaux : « Allez ! » Et les moineaux prirent vie et s'envolèrent.</Quote>
+    <Quote cite="Coran 5:110">Quand tu façonnais de l'argile la forme d'un oiseau, puis tu soufflais dedans, et il devenait un oiseau par Ma permission.</Quote>
+    <Quote cite="Coran 3:49">Je façonne pour vous de l'argile comme la forme d'un oiseau, puis je souffle dedans, et il devient un oiseau vivant, par la permission de Dieu.</Quote>
+    <h3>La parabole du semeur</h3>
+    <p>La page rapproche également l'image de la semence dans l'Évangile selon Matthieu et celle de la pousse qui se renforce dans le Coran.</p>
+    <Quote cite="Matthieu 13:3–9">Un semeur sortit pour semer. Une partie de la semence tomba le long du chemin ; une autre dans les endroits pierreux ; une autre parmi les épines ; et une autre dans la bonne terre, où elle donna du fruit. Que celui qui a des oreilles pour entendre entende.</Quote>
+    <Quote cite="Coran 48:29">Leur allégorie dans l'Évangile est celle d'une semence qui sort sa pousse, puis la renforce ; alors elle s'épaissit et se dresse sur sa tige, émerveillant les semeurs.</Quote>
   </div>
 </Band>
