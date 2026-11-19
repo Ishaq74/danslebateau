@@ -1,18 +1,37 @@
 ---
 import Band from "@components/ui/Band.astro";
 import Quote from "@components/ui/Quote.astro";
+import { Image } from "astro:assets";
+import boat from "@assets/images/le-livre-de-dieu/bateau-navigue-eau.jpg";
+import nebula from "@assets/images/le-livre-de-dieu/ciel-nebuleuse.jpg";
 ---
 <Band tone="graphite">
-  <p>"QURAN" est la méthode utilisée pour transmettre le Livre, une forme et méthode dans une langue claire. 📜 Le Qur’an est porteur du Rappel, parce qu’il transmet le Livre (Al-Kitâb). 🧠🔔 En bref : le Qur’an est le tafsîr du Livre, son exposé explicite et son rassemblement. Le Livre existait déjà avant le Coran en langue arabe 📖🕰️ Et ce Coran, justement, en est le défenseur et le rappel vivant 🛡️</p>
-  <Quote cite="Quran 10:1">“Āyātu al-Kitāb” — Voici les versets du Livre...</Quote>
-  <Quote cite="Quran 12:1–2">“Āyātu al-Kitāb al-Mubīn… innā anzalnāhu Qurʾānan ʿarabiyyan” — Tels sont les versets du Livre explicite. Nous l'avons fait descendre en un Coran arabe, afin que vous compreniez.</Quote>
-  <Quote cite="Quran 3 : 23">N'as-tu pas vu comment agissent ceux qui ont reçu une part du Livre, et qui sont maintenant invités au Livre de Dieu pour trancher leurs différents...</Quote>
+  <div class="grid gap-4 md:grid-cols-[1fr_2fr] md:items-center">
+    <Image src={boat} alt="Un bateau navigue sur l'eau" class="h-52 w-full rounded-md object-cover" />
+    <div class="space-y-4">
+      <p>« Quran » est la méthode utilisée pour transmettre le Livre, une forme et une méthode dans une langue claire. Le Qur’an est porteur du Rappel, parce qu’il transmet le Livre (Al-Kitâb). En bref : le Qur’an est le tafsîr du Livre, son exposé explicite et son rassemblement. Le Livre existait déjà avant le Coran en langue arabe ; ce Coran en est le défenseur et le rappel vivant.</p>
+      <Quote cite="Coran 10:1">Voici les versets du Livre.</Quote>
+      <Quote cite="Coran 12:1–2">Tels sont les versets du Livre explicite. Nous l'avons fait descendre en un Coran arabe, afin que vous compreniez.</Quote>
+    </div>
+  </div>
 </Band>
 <Band tone="wine">
-  <p>Les chrétiens disent détenir le Livre de Dieu 📖✝️. Les juifs disent détenir le Livre de Dieu 📖✡️. Et pourtant, paradoxe amer: malgré cette source commune, ils se heurtent et s’opposent sur le plan des idées 🤝💥.</p>
-  <Quote cite="Quran 2 : 113">Les Juifs ont dit : "Les Nazaréens ne se fondent sur rien", et les Nazaréens ont dit : "Les Juifs ne se fondent sur rien", alors qu'ils récitent le Livre !</Quote>
-  <Quote cite="Quran 25 : 30">Le messager dit : "Mon peuple a pris ce Coran pour une chose délaissée !"</Quote>
-  <p>Cela renvoie à l’idée que la division actuelle n’est pas due au Livre, mais aux hommes. Pourtant, toutes ces appartenances – juif, chrétien, musulman – ne sont au fond que des étiquettes humaines. Car en réalité, auprès de Dieu, il n’y a qu’un seul Livre.</p>
-  <Quote cite="Quran 13 : 39">Dieu efface et confirme ce qu'Il veut. Auprès de Lui est la source du Livre/Umm al-Kitàb.</Quote>
-  <Quote cite="Quran 43 : 4">Il est auprès de Nous, dans la source du Livre/Umm al-Kitàb, élevé et plein de sagesse.</Quote>
+  <p>Les chrétiens disent détenir le Livre de Dieu. Les juifs disent détenir le Livre de Dieu. Pourtant, malgré cette source commune, ils se heurtent et s'opposent sur le plan des idées.</p>
+  <Quote cite="Coran 3:23">N'as-tu pas vu comment agissent ceux qui ont reçu une part du Livre, et qui sont maintenant invités au Livre de Dieu pour trancher leurs différends ?</Quote>
+  <Quote cite="Coran 2:113">Les Juifs ont dit : « Les Nazaréens ne se fondent sur rien », et les Nazaréens ont dit : « Les Juifs ne se fondent sur rien », alors qu'ils récitent le Livre !</Quote>
+  <Quote cite="Coran 25:30">Le messager dit : « Mon Seigneur, mon peuple a pris ce Coran pour une chose délaissée ! »</Quote>
+  <p>La division actuelle n'est pas attribuée au Livre, mais aux hommes. Les appartenances — juif, chrétien, musulman — sont des étiquettes humaines. Le propos défendu ici est qu'auprès de Dieu, il n'y a qu'un seul Livre : une source primordiale qui se manifeste à travers les prophètes et les communautés.</p>
+  <Image src={nebula} alt="Nébuleuse lumineuse dans le ciel" class="mx-auto max-h-64 w-full rounded-md object-cover" />
+  <Quote cite="Coran 13:39">Dieu efface et confirme ce qu'Il veut. Auprès de Lui est la source du Livre (Umm al-Kitâb).</Quote>
+  <Quote cite="Coran 43:4">Il est auprès de Nous, dans la source du Livre (Umm al-Kitâb), élevé et plein de sagesse.</Quote>
+  <p>Dans cette perspective, la Torah, les Psaumes, l'Évangile, Job, Jonas et les autres Écritures sont présentés comme des manifestations d'une même source. Le Coran en langue arabe est décrit comme un véhicule du Rappel, et non comme la source première.</p>
+  <Quote cite="Coran 5:68">Dis : « Ô gens du Livre, vous ne vous appuyez sur rien, tant que vous ne vous conformez pas à la Torah et à l'Évangile, et à ce qui est descendu vers vous de la part de votre Seigneur. »</Quote>
+  <h3>En résumé</h3>
+  <ul class="list-disc space-y-1 pl-6">
+    <li>La Torah, les Psaumes et l'Évangile sont aussi le Livre.</li>
+    <li>Le Livre précède le Coran arabe ; le Dhikr est logé dans le Livre.</li>
+    <li>Le Coran est un véhicule de transmission et de rappel.</li>
+  </ul>
+  <p>Le texte poursuit avec plusieurs passages coraniques qui confirment ce qui a précédé : Coran 2:285, 2:4, 2:91, 35:31 et 4:47. Il souligne que certaines informations restent difficiles à comprendre sans consulter les révélations antérieures.</p>
+  <Quote cite="Coran 16:43">Nous n'avons envoyé, avant toi, que des hommes auxquels Nous avons fait des révélations — demandez donc aux gens du Rappel si vous ne savez pas.</Quote>
 </Band>
