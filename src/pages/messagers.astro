@@ -10,7 +10,7 @@ import JobSection from '@components/pages/messagers/sections/JobSection.astro';
 import ArticlesSection from '@components/pages/misc/ArticlesSection.astro';
 import { Image } from 'astro:assets';
 import sunset from '@assets/images/messagers/coucher-soleil-oiseaux.jpg';
-import boat from '@assets/images/messagers/file.mp4';
+import video from '@assets/images/messagers/file.mp4';
 ---
 <BaseLayout title="Les Messagers" description="Les récits de Moïse, Adam, David et Job dans les Écritures.">
   <div class="mx-auto max-w-reading space-y-10 px-4 py-8">
@@ -28,6 +28,12 @@ import boat from '@assets/images/messagers/file.mp4';
     <AdamSection />
     <DavidSection />
     <JobSection />
+    <div class="mx-auto w-full max-w-3xl">
+      <video class="w-full rounded-lg" controls preload="metadata" playsinline>
+        <source src={video} type="video/mp4" />
+        Votre navigateur ne prend pas en charge la lecture vidéo.
+      </video>
+    </div>
     <ArticlesSection />
   </div>
 </BaseLayout>
