@@ -2,27 +2,36 @@
 import BaseLayout from '@layouts/BaseLayout.astro';
 import HeroSection from '@components/pages/le-livre-de-dieu/sections/HeroSection.astro';
 import IntroSection from '@components/pages/le-livre-de-dieu/sections/IntroSection.astro';
+import IdrisSection from '@components/pages/le-livre-de-dieu/sections/IdrisSection.astro';
+import AngelsSection from '@components/pages/le-livre-de-dieu/sections/AngelsSection.astro';
 import PsaumesSection from '@components/pages/le-livre-de-dieu/sections/PsaumesSection.astro';
 import JobSection from '@components/pages/le-livre-de-dieu/sections/JobSection.astro';
 import JonasSection from '@components/pages/le-livre-de-dieu/sections/JonasSection.astro';
 import EvangileSection from '@components/pages/le-livre-de-dieu/sections/EvangileSection.astro';
 import TorahSection from '@components/pages/le-livre-de-dieu/sections/TorahSection.astro';
 import ArticlesSection from '@components/pages/misc/ArticlesSection.astro';
-
 import bateau from '@assets/images/le-livre-de-dieu/bateau-navigue-eau.jpg';
-
 ---
-
 <BaseLayout title="Le Livre de Dieu" description="Voyage au cœur du Livre tout entier.">
-  <div class="max-w-reading mx-auto space-y-10 py-8">
-    <HeroSection image={bateau} alt="Voilier dans la tempête" />
+  <div class="mx-auto max-w-reading space-y-10 px-4 py-8">
+    <HeroSection image={bateau} alt="Un bateau navigue sur l'eau" />
+    <nav aria-label="Sommaire du Livre" class="flex flex-wrap justify-center gap-2 text-sm">
+      <a href="#idris" class="rounded-full border border-primary-accent/50 px-3 py-2 hover:bg-primary-accent/15">Idrîs</a>
+      <a href="#anges" class="rounded-full border border-primary-accent/50 px-3 py-2 hover:bg-primary-accent/15">Michaël et les anges</a>
+      <a href="#psaumes" class="rounded-full border border-primary-accent/50 px-3 py-2 hover:bg-primary-accent/15">Psaumes</a>
+      <a href="#job" class="rounded-full border border-primary-accent/50 px-3 py-2 hover:bg-primary-accent/15">Job</a>
+      <a href="#jonas" class="rounded-full border border-primary-accent/50 px-3 py-2 hover:bg-primary-accent/15">Jonas</a>
+      <a href="#evangile" class="rounded-full border border-primary-accent/50 px-3 py-2 hover:bg-primary-accent/15">Évangile</a>
+      <a href="#torah" class="rounded-full border border-primary-accent/50 px-3 py-2 hover:bg-primary-accent/15">Torah</a>
+    </nav>
     <IntroSection />
+    <IdrisSection />
+    <AngelsSection />
     <PsaumesSection />
     <JobSection />
     <JonasSection />
     <EvangileSection />
     <TorahSection />
     <ArticlesSection />
-    <p class="text-sm text-gray-400 text-center">© https://www.danslebateau.com/le-livre-de-dieu-1</p>
   </div>
 </BaseLayout>
