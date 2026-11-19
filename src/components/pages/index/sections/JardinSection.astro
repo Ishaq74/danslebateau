@@ -2,11 +2,17 @@
 import Band from "@components/ui/Band.astro";
 import { Image } from "astro:assets";
 import fraise from "@assets/images/accueil/fraise.png";
+import lenteur from "@assets/images/accueil/ce-qui-pousse-lentement-dure.png";
+import fleur from "@assets/images/accueil/fleur-bulbe.jpg";
 ---
 <Band tone="wine" split="2/1">
-  <div>
-    <p>Ne reste pas planté devant le jardin en plein hiver ❄️, à attendre la fraise 🍓. Elle viendra, mais pas maintenant. Prends ce que la saison t’offre: le citron , la pomme 🍎, la noix 🌰. Aime les fruits d’hiver pour ce qu’ils sont, car chaque chose a son temps et son goût ⏳🍇. Il est des fruits qui ne se croisent pas dans la saison. La cerise rougit sous le soleil d’été 🍒, tandis que l’orange mûrit dans le froid 🍊. Si tu aimes l’une et refuses l’autre, sache pourtant qu’elles peuvent pousser dans le même jardin. Ce n’est pas le sol qui change, mais le moment. Le jardin d'un homme est vaste 🌍. Parcours-le humblement. Ne sois pas impressionné par la taille de ses monts 🌄, ni troublé par la profondeur de ses eaux 🌊. Ne juge pas un jardin à sa saison. Même nu en apparence, il travaille en silence 🌱. Prends du vent ce qu’il t’apporte 🌬️, bon gré mal gré, car rien ne traverse le jardin sans raison. Ainsi, ne réclame pas toujours la même douceur, ni la même récolte au même instant. Tout a un but, et tout porte un sens.</p>
+  <div class="space-y-4">
+    <p>Ne reste pas planté devant le jardin en plein hiver ❄️, à attendre la fraise 🍓. Elle viendra, mais pas maintenant. Prends ce que la saison t’offre : le citron, la pomme 🍎, la noix 🌰. Aime les fruits d’hiver pour ce qu’ils sont, car chaque chose a son temps et son goût ⏳. Il est des fruits qui ne se croisent pas dans la saison. La cerise rougit sous le soleil d’été 🍒, tandis que l’orange mûrit dans le froid 🍊. Si tu aimes l’une et refuses l’autre, sache pourtant qu’elles peuvent pousser dans le même jardin. Ce n’est pas le sol qui change, mais le moment. Le jardin d'un homme est vaste 🌍. Parcours-le humblement. Ne sois pas impressionné par la taille de ses monts 🌄, ni troublé par la profondeur de ses eaux 🌊. Ne juge pas un jardin à sa saison. Même nu en apparence, il travaille en silence 🌱. Prends du vent ce qu’il t’apporte 🌬️, bon gré mal gré, car rien ne traverse le jardin sans raison.</p>
     <p>L'exemple de la fraise = les émotions vives. 🍓❤️ Elle ressemble à un cœur rouge posé sur la terre. Sa couleur est intense, sa chair est tendre, et rien n’est dissimulé. Même ses graines sont à l’extérieur, comme si tout devait être visible, exprimé, ressenti. La fraise ne cache rien et ne retient pas ses élans. Elle incarne l’amour, le désir, la joie, parfois l’excès. C’est le fruit des émotions franches, de la sensibilité assumée, du cœur qui bat fort et qui s’exprime sans retenue.</p>
   </div>
-  <Image src={fraise} alt="Fraise" class="w-40" />
+  <div class="flex flex-col items-center gap-4">
+    <Image src={fraise} alt="Fraise rouge" class="w-40" />
+    <Image src={lenteur} alt="Ce qui pousse lentement dure" class="w-full rounded-lg" />
+    <Image src={fleur} alt="Fleur en train d'éclore" class="w-32 rounded-lg" />
+  </div>
 </Band>
