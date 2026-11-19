@@ -12411,58 +12411,6 @@
             </style>
         </head>
         <body class=''>
-            <script type="text/javascript">
-                var bodyCacheable = true;
-
-                var exclusionReason = {
-                    "shouldRender": true,
-                    "forced": false
-                };
-                var ssrInfo = {
-                    "cacheExclusionReason": "",
-                    "renderBodyTime": 1384,
-                    "renderTimeStamp": 1794968678816
-                }
-            </script>
-            <!--pageHtmlEmbeds.bodyStart start-->
-            <script type="wix/htmlEmbeds" id="pageHtmlEmbeds.bodyStart start"></script>
-            <script type="wix/htmlEmbeds" id="pageHtmlEmbeds.bodyStart end"></script>
-            <!--pageHtmlEmbeds.bodyStart end-->
-            <script id="wix-first-paint">
-                if (window.ResizeObserver && (!window.PerformanceObserver || !PerformanceObserver.supportedEntryTypes || PerformanceObserver.supportedEntryTypes.indexOf('paint') === -1)) {
-                    new ResizeObserver(function(entries, observer) {
-                        entries.some(function(entry) {
-                            var contentRect = entry.contentRect;
-                            if (contentRect.width > 0 && contentRect.height > 0) {
-                                requestAnimationFrame(function(now) {
-                                    window.wixFirstPaint = now;
-                                    dispatchEvent(new CustomEvent('wixFirstPaint'));
-                                });
-                                observer.disconnect();
-                                return true;
-                            }
-                        });
-                    }
-                    ).observe(document.body);
-                }
-            </script>
-            <script id="scroll-bar-width-calculation">
-                const div = document.createElement('div')
-                div.style.overflowY = 'scroll'
-                div.style.width = '50px'
-                div.style.height = '50px'
-                div.style.visibility = 'hidden'
-                document.body.appendChild(div)
-                const scrollbarWidth = div.offsetWidth - div.clientWidth
-                document.body.removeChild(div)
-                if (scrollbarWidth > 0) {
-                    document.body.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`)
-                }
-            </script>
-            <!-- domStoreHtml -->
-            <svg data-dom-store style="display:none">
-                <defs id="dom-store-defs"></defs>
-            </svg>
             <div id="SITE_CONTAINER">
                 <div id="main_MF" class="main_MF">
                     <div id="SCROLL_TO_TOP" class="qe3oTb ignore-focus SCROLL_TO_TOP" role="region" tabindex="-1" aria-label="top of page">
