@@ -2,20 +2,27 @@
 import Band from "@components/ui/Band.astro";
 import { Image } from "astro:assets";
 import illustration from "@assets/images/le-livre-de-dieu/homme-regarde-ciel-etoile.jpg";
+import trail from "@assets/images/le-livre-de-dieu/homme-trail-montagne.jpg";
 import Quote from "@components/ui/Quote.astro";
 ---
 <section id="job" aria-labelledby="job-title" class="scroll-mt-28">
   <Band tone="graphite" split="1/3">
-  <Image src={illustration} alt="Silhouette contemplant un ciel étoilé" class="h-56 w-full rounded-md object-cover md:h-full md:min-h-72" />
-  <div class="space-y-4">
-    <h2 id="job-title" class="text-center">Le Livre de Job</h2>
-    <p>Un autre nom qui apparaît très peu dans le Coran en arabe est celui d’Ayyûb (Job) 🕊️📖. Le Coran en arabe nous rappelle une nouvelle fois ce qui existait déjà et nous renvoie vers ces récits antérieurs 📜🔎.</p>
-    <Quote cite="Job 1:12">Le Seigneur dit à Satan : « Soit ! Tu as pouvoir sur tout ce qu’il possède, mais tu ne porteras pas la main sur lui. »</Quote>
-    <Quote cite="Coran 38:41">Rappelle Job, Notre serviteur, lorsqu'il appela son Seigneur : « Le diable m'a infligé détresse et châtiment ».</Quote>
-    <p>L’histoire du Livre de Job est profondément captivante 📖✨. Job, autrefois homme de réussite et de bénédiction 🌾🏆, se retrouve réduit à l’état d’os et de cendres 🦴🌪️.</p>
-    <Quote cite="Job 42:10">Le Seigneur rétablit la condition de Job quand il eut prié pour ses amis, et le Seigneur lui donna le double de tout ce qu’il avait possédé.</Quote>
-    <Quote cite="Coran 38:43">Et Nous lui rendîmes sa famille et la fîmes deux fois plus nombreuse, comme une miséricorde de Notre part et comme un rappel pour les gens doués d'intelligence.</Quote>
-    <Quote cite="Épître de Jacques 5:11">« Voici, nous disons bienheureux ceux qui ont persévéré. Vous avez entendu parler de la patience de Job... »</Quote>
-  </div>
+    <div class="space-y-3">
+      <Image src={illustration} alt="Silhouette contemplant un ciel étoilé" class="h-56 w-full rounded-md object-cover md:h-72" />
+      <Image src={trail} alt="Un homme marche sur un sentier de montagne" class="h-44 w-full rounded-md object-cover" />
+    </div>
+    <div class="space-y-4">
+      <h2 id="job-title" class="text-center">Le Livre de Job</h2>
+      <p>Un autre nom qui apparaît très peu dans le Coran en arabe est celui d’Ayyûb (Job). Le Coran rappelle son nom et quelques paroles, mais ne raconte pas toute son histoire ni les raisons détaillées de son épreuve. Le site invite donc à revenir au récit antérieur, comme à une mémoire plus ancienne.</p>
+      <p>Ayyûb fait partie des prophètes auxquels Dieu a fait révélation. Les citations coraniques retenues mettent en signal l'introduction du Livre, son essence profonde et sa conclusion : elles sont présentées comme une invitation à lire le Livre de Job dans son intégralité.</p>
+      <Quote cite="Job 1:12">Le Seigneur dit à Satan : « Soit ! Tu as pouvoir sur tout ce qu’il possède, mais tu ne porteras pas la main sur lui. »</Quote>
+      <Quote cite="Coran 38:41">Rappelle Job, Notre serviteur, lorsqu'il appela son Seigneur : « Le diable m'a infligé détresse et châtiment. »</Quote>
+      <p>Le récit biblique décrit un homme autrefois prospère, réduit à l’état d’os et de cendres. Sa femme et ses trois amis prennent la parole, proposent leurs lectures de sa souffrance et le jugent. Job leur répond et les qualifie de piètres consolateurs. Après ces débats vient le silence, puis Dieu intervient pour trancher le désaccord et prendre le parti de Job.</p>
+      <p>Le site souligne que Job est aussi une épreuve pour ceux qui l'entourent : comment accompagner celui qui souffre sans le condamner ni prétendre connaître les raisons de son malheur ?</p>
+      <p>Au terme de l'épreuve, Job est rétabli. Dieu lui rend ce qu'il avait perdu et double ses biens, après qu'il a prié pour ses amis.</p>
+      <Quote cite="Job 42:10">Le Seigneur rétablit la condition de Job quand il eut prié pour ses amis, et le Seigneur lui donna le double de tout ce qu’il avait possédé.</Quote>
+      <Quote cite="Coran 38:43">Et Nous lui rendîmes sa famille et la fîmes deux fois plus nombreuse, comme une miséricorde de Notre part et comme un rappel pour les gens doués d'intelligence.</Quote>
+      <Quote cite="Épître de Jacques 5:11">Voici, nous disons bienheureux ceux qui ont persévéré. Vous avez entendu parler de la patience de Job, et vous avez vu la fin que le Seigneur lui accorda, car le Seigneur est plein de compassion et de miséricorde.</Quote>
+    </div>
   </Band>
 </section>
