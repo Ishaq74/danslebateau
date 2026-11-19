@@ -21,6 +21,8 @@ const links: NavLink[] = [
       { label: "Les Psaumes", href: "/le-livre-de-dieu#psaumes" },
       { label: "Job", href: "/le-livre-de-dieu#job" },
       { label: "Jonas", href: "/le-livre-de-dieu#jonas" },
+      { label: "Idrîs", href: "/le-livre-de-dieu#idris" },
+      { label: "Michaël et les anges", href: "/le-livre-de-dieu#anges" },
     ],
   },
   {
@@ -46,12 +48,14 @@ const footerNavLinks: FooterLink[] = [
   <Font cssVariable="--font-barlow" preload />
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <link rel="icon" href="/favicon.ico" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#292929" />
+  <meta name="color-scheme" content="dark" />
   <title>{title}</title>
   <meta name="description" content={description} />
 </head>
 <body class="flex min-h-screen flex-col font-sans antialiased">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-background focus:p-3 focus:text-foreground">Aller au contenu</a>
   <Header siteName="Dans le bateau" links={links} />
   <main id="main-content" class="flex-1">
     <slot />
@@ -62,7 +66,7 @@ const footerNavLinks: FooterLink[] = [
     showNavSecondary={false}
     showLegal={false}
     socialLinks={[
-      { name: "TikTok : Sofianemessager", href: "https://www.tiktok.com/@sofianemessager", icon: "tiktok" },
+      { name: "TikTok : Sofianemessager", href: "https://www.tiktok.com/@sofianemessager", icon: "mdi:tiktok" },
     ]}
     showSocial={true}
     socialHeading="À propos"
