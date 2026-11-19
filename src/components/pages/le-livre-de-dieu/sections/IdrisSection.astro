@@ -1,0 +1,24 @@
+---
+import Band from "@components/ui/Band.astro";
+import Quote from "@components/ui/Quote.astro";
+import { Image } from "astro:assets";
+import study from "@assets/images/le-livre-de-dieu/femme-etudie-lofi.jpg";
+import sky from "@assets/images/le-livre-de-dieu/ciel-nebuleuse.jpg";
+import pier from "@assets/images/le-livre-de-dieu/garcon-regarde-ciel-ponton.jpg";
+---
+<section id="idris" aria-labelledby="idris-title" class="scroll-mt-28 space-y-5">
+  <h2 id="idris-title" class="text-center">Idrîs et Hénoch</h2>
+  <Band tone="navy">
+    <div class="grid gap-3 sm:grid-cols-3">
+      <Image src={study} alt="Une personne étudie devant son ordinateur" class="h-44 w-full rounded-md object-cover" />
+      <Image src={sky} alt="Nébuleuse dans le ciel nocturne" class="h-44 w-full rounded-md object-cover" />
+      <Image src={pier} alt="Un jeune homme contemple le ciel depuis un ponton" class="h-44 w-full rounded-md object-cover" />
+    </div>
+    <Quote cite="Coran 19:56–57">Mentionne dans le Livre Idris. C'était un véridique, un prophète. Et Nous l'élevâmes à un haut rang.</Quote>
+    <p>Idrîs, dans le Coran arabe, apparaît dans deux passages seulement. Le texte le présente comme véridique, prophète et élevé à un rang sublime, sans développer son récit. Pour comprendre pourquoi ce nom est rappelé, la page met en regard les révélations antérieures et la figure d'Hénoch.</p>
+    <p>Le rapprochement proposé repose sur les traditions autour d'Hénoch : un homme associé à la connaissance, à l'instruction, aux visions et à l'élévation. La Genèse dit qu'Hénoch marcha avec Dieu, puis disparut, car Dieu le prit. Le Livre d'Hénoch développe, lui, des visions et des annonces qui éclairent les thèmes évoqués.</p>
+    <Quote cite="Hénoch 104:2">Ne craignez pas, justes, lorsque vous voyez les pécheurs devenir puissants et prospérer dans leurs voies ; ne soyez pas leurs compagnons, mais éloignez-vous de leur violence. Car vous serez associés aux armées du ciel et vous brillerez comme les astres du ciel.</Quote>
+    <p>Le nom d'Idrîs est rapproché de la racine arabe d-r-s, « étudier, apprendre avec constance », tandis que Hénoch (Ḥanokh en hébreu) renvoie à l'instruction et à la formation. Le texte invite ainsi à lire les mentions coraniques comme des renvois à un patrimoine scripturaire plus vaste, plutôt que comme des récits isolés.</p>
+    <Quote cite="Coran 21:85">Et Ismaël, Idris et Dhûl-Kifl : tous étaient parmi les endurants.</Quote>
+  </Band>
+</section>

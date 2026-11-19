@@ -1,27 +1,20 @@
 ---
 import Band from "@components/ui/Band.astro";
 import Quote from "@components/ui/Quote.astro";
+import { Image } from "astro:assets";
+import illustration from "@assets/images/messagers/exemple-de-job.png";
 ---
-<Band tone="graphite">
-  <p>Le Coran nous enseigne que dans l’histoire des Messagers se niche une leçon destinée aux doués d’intelligence 🧠✨. Ici, pas de projecteur sur ce qu’ils prêchent, mais un zoom assumé sur ce qu’ils traversent. Leur vécu, leurs faux pas, leurs silences, leurs élans et leurs chutes deviennent le tableau noir sur lequel chacun peut reconnaître sa propre écriture.</p>
-  <Quote cite="Coran 40:78">« Parmi eux, il en est dont Nous t’avons raconté l’histoire, et d’autres dont Nous ne t’avons pas raconté l’histoire. »</Quote>
-  <Quote cite="Quran 11 : 27">Les notables de son peuple qui avaient dénié dirent alors : "Nous ne voyons en toi qu'un humain comme nous... Nous pensons plutôt que vous êtes des menteurs".</Quote>
-  <Quote cite="Quran 25 : 7 et 8">Ils dirent : "Qu'est-ce donc que ce messager qui mange de la nourriture et circule dans les marchés ? Pourquoi n'a-t-on pas fait descendre vers lui un ange ?" Les injustes dirent : "Vous ne suivez qu'un homme ensorcelé".</Quote>
-  <p>En rendant le Messager si proche, si humain, si “normal” au sens le plus dérangeant du terme, le Coran coupe court à l’alibi esthétique.</p>
-  <Quote cite="Psaume 44:15">« Je suis devenu la risée de tous, l’objet de leurs sarcasmes chaque jour. »</Quote>
-  <Quote cite="Sourate 22 verset 72">Et quand on leur récite Nos versets bien clairs, tu discerneras la réprobation sur les visages de ceux qui ont mécru.</Quote>
-  <Quote cite="Sourate 61 : 5">Quand Moïse dit à son peuple : "Ô mon peuple, pourquoi me persécutez-vous alors que vous savez que je suis le messager de Dieu vers vous ?"</Quote>
-</Band>
-<Band tone="amber">
-  <Quote cite="Coran 17 : 55">Et ton Seigneur connaît mieux ceux qui sont dans les cieux et la terre. Nous avons favorisé certains prophètes par rapport à d'autres. Nous avons donné à David les Psaumes.</Quote>
-  <p>David (Daoud) est un Messager de Dieu 🕊️ qui n’échappe pas à la règle universelle des envoyés divins : celle de l’épreuve, de la vulnérabilité et de la persévérance 💭. Si le Coran le décrit comme endurant et ferme dans l’épreuve 💪, le Livre des Psaumes nous révèle en profondeur pourquoi 📖.</p>
-  <p>Si David (Daoud) est contesté et mis de côté, c’est précisément parce qu’il incarne l’opposé de la société dans laquelle il vit ⚖️. Là où les hommes refusent de se remettre en question, lui n’a aucune difficulté à reconnaître ses fautes et à s’examiner sincèrement 💭.</p>
-  <p>Psaume 69:7 — « Que ceux qui espèrent en toi ne soient pas confondus à cause de moi, Seigneur, Éternel des armées ! » Psaume 51:5 — « Car je reconnais mes transgressions, et mon péché est constamment devant moi » Psaume 69:5 — O Dieu! tu connais ma folie, Et mes fautes ne te sont point cachées. Psaume 51:6 — « Contre toi seul j’ai péché, et j’ai fait ce qui est mal à tes yeux » Psaume 119:176 — « Je me suis égaré comme une brebis perdue ; cherche ton serviteur. » Psaume 55:5 — « Mon cœur tremble au dedans de moi, et les terreurs de la mort me surprennent. » Psaume 38:12 — « Mes amis et mes compagnons s’éloignent de ma plaie, et mes proches se tiennent à distance. » Psaume 22:6 — « Mais moi, je suis un ver et non un homme, l’opprobre des hommes et le méprisé du peuple. » Psaume 38:5 — « Ma faute m’accable, elle est trop lourde pour moi. »</p>
-  <p>C’est précisément en cela que le Coran proclame qu’il y a, dans l’histoire des Messagers, une leçon pour ceux qui réfléchissent.</p>
-  <Quote cite="Coran 38:24">Après cela, David se demanda s’il avait rendu le bon jugement. Il pensait que nous étions en train de le tester. Il implora alors son Seigneur pour le pardon, s’inclina et se repentit.</Quote>
-  <Quote cite="CORAN 38 : 46">Nous avons fait d'eux l'objet d'une distinction particulière: le rappel de l'au-delà.</Quote>
-  <Quote cite="Quran 37 : 180">Gloire à ton Seigneur, le Seigneur de la puissance. Il est au-dessus de ce qu'ils décrivent! Que la paix soit sur les messagers.</Quote>
-  <Quote cite="Quran 12 : 53">Je ne m'innocente pas, car l'âme est instigatrice du mal, à moins que mon Seigneur ne me fasse miséricorde, car mon Seigneur est Pardonneur, Miséricordieux.</Quote>
-  <Quote cite="Quran 4 : 49">N'as-tu pas vu ceux qui déclarent se purifier eux-mêmes ? Alors que c'est Dieu qui purifie qui Il veut, sans la moindre injustice.</Quote>
-  <Quote cite="Psaume 71:10">Car mes ennemis parlent de moi, Et ceux qui guettent ma vie se consultent entre eux, Disant: Dieu l'abandonne; Poursuivez, saisissez-le; il n'y a personne pour le délivrer.</Quote>
-</Band>
+<section id="job" aria-labelledby="job-title" class="scroll-mt-28 space-y-5">
+  <h2 id="job-title" class="text-center uppercase tracking-wide">Job (Ayyoub)</h2>
+  <Band tone="graphite" split="1/3">
+    <Image src={illustration} alt="Illustration associée au récit de Job" class="mx-auto w-full rounded-lg" />
+    <div class="space-y-4">
+      <p>Job est présenté comme un homme éprouvé, dont la fidélité est mise à l'épreuve au milieu de pertes et de souffrances. Le récit biblique et les passages coraniques invitent à ne pas confondre l'épreuve avec un abandon de Dieu.</p>
+      <Quote cite="Coran 38:41">Rappelle Job, Notre serviteur, lorsqu'il appela son Seigneur : « Le diable m'a infligé détresse et châtiment. »</Quote>
+      <Quote cite="Job 42:10">Le Seigneur rétablit la condition de Job quand il eut prié pour ses amis, et le Seigneur lui donna le double de tout ce qu'il avait possédé.</Quote>
+      <Quote cite="Coran 38:43">Et Nous lui rendîmes sa famille et la fîmes deux fois plus nombreuse, comme une miséricorde de Notre part et comme un rappel pour les gens doués d'intelligence.</Quote>
+      <p>Le récit de Job est développé dans la page consacrée au Livre de Dieu, où sont rapprochés les passages bibliques, coraniques et l'appel à la patience.</p>
+      <a href="/le-livre-de-dieu#job" class="font-semibold text-primary-accent underline underline-offset-4">Lire le développement complet sur le Livre de Job</a>
+    </div>
+  </Band>
+</section>

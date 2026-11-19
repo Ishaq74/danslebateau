@@ -37,46 +37,19 @@ interface Props extends HTMLAttributes<"div"> {
 }
 
 const {
-  tag = "div",
-  display = "block",
-  cols,
-  gap,
-  rowGap,
-  columnGap,
-  flexDirection,
-  flexWrap,
-  alignItems = "stretch",
-  justifyContent = "start",
-  alignContent = "stretch",
-  padding,
-  paddingBlock,
-  paddingInline,
-  paddingTop,
-  paddingBottom,
-  paddingLeft,
-  paddingRight,
-  margin,
-  marginBlock,
-  marginInline,
-  marginTop,
-  marginBottom,
-  marginLeft,
-  marginRight,
-  width,
-  height,
-  maxWidth,
-  minHeight,
-  className = "",
-  style: inlineStyle = "",
-  ...rest
+  tag = "div", display = "block", cols, gap, rowGap, columnGap,
+  flexDirection, flexWrap, alignItems = "stretch", justifyContent = "start",
+  alignContent = "stretch", padding, paddingBlock, paddingInline, paddingTop,
+  paddingBottom, paddingLeft, paddingRight, margin, marginBlock, marginInline,
+  marginTop, marginBottom, marginLeft, marginRight, width, height, maxWidth,
+  minHeight, className = "", style: inlineStyle = "", ...rest
 } = Astro.props as Props;
 
 const validTags = ["div", "section", "article", "aside", "main", "header", "footer", "nav"];
 const Tag = validTags.includes(tag) ? tag : "div";
-
 const alignMap: Record<string, string> = { start: "start", center: "center", end: "end", stretch: "stretch", baseline: "baseline" };
 const justifyMap: Record<string, string> = { start: "start", center: "center", end: "end", between: "space-between", around: "space-around", evenly: "space-evenly" };
-
+const maxWidthClass = maxWidth ? (maxWidth.startsWith("max-w-") ? maxWidth : `max-w-${maxWidth}`) : "";
 const classes = [
   display === "grid" ? "grid" : display === "flex" ? "flex" : display === "inline-flex" ? "inline-flex" : display === "inline-grid" ? "inline-grid" : "block",
   cols && typeof cols === "number" ? `grid-cols-${cols}` : "",
@@ -103,17 +76,15 @@ const classes = [
   marginRight ? `mr-${marginRight}` : "",
   width ? `w-${width}` : "",
   height ? `h-${height}` : "",
-  maxWidth ? `max-w-${maxWidth}` : "",
+  maxWidthClass,
   minHeight ? `min-h-${minHeight}` : "",
   gap ? `gap-${gap}` : "",
   rowGap ? `gap-y-${rowGap}` : "",
   columnGap ? `gap-x-${columnGap}` : "",
   className,
 ].filter(Boolean).join(" ");
-
 const style = [inlineStyle].filter(Boolean).join(" ");
 ---
-
 <Tag class={classes} style={style} {...rest}>
   <slot />
 </Tag>

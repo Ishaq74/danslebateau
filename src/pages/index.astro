@@ -1,7 +1,6 @@
 ---
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { Image } from 'astro:assets';
-import Band from '@components/ui/Band.astro';
 import Wrapper from '@components/Section/Wrapper.astro';
 import HeroSection from '@components/pages/index/sections/HeroSection.astro';
 import IntroSection from '@components/pages/index/sections/IntroSection.astro';
@@ -15,46 +14,27 @@ import MessageSection from '@components/pages/index/sections/MessageSection.astr
 import ArticlesSection from '@components/pages/misc/ArticlesSection.astro';
 
 import bateau from '@assets/images/accueil/bateau-qui-navigue-sur-eau.jpg';
-import salahuddin from '@assets/images/accueil/salahuddin-jitmoud.jpg';
 import jardin from '@assets/images/accueil/la-parabole-du-jardin.png';
+import baleine from '@assets/images/accueil/baleine-sous-bateau.jpg';
 import tiktok from '@assets/images/accueil/video-tiktok-le-bateauw.jpg';
 ---
-
 <BaseLayout title="Dans le Bateau" description="Le Bateau, c’est une voie vers Dieu.">
-  <Wrapper maxWidth="max-w-reading" className="mx-auto space-y-10">
+  <Wrapper maxWidth="reading" className="mx-auto space-y-10 px-4 py-8">
     <HeroSection image={bateau} alt="Un bateau qui navigue sur une mer agitée" title="Dans le Bateau" />
-
     <IntroSection />
-
+    <Image src={baleine} alt="Une baleine nage sous un bateau" class="mx-auto w-full max-w-3xl rounded-lg" />
     <Image src={jardin} alt="La parabole du jardin" class="w-full rounded-lg" />
-
     <JardinSection />
-
-    <Band tone="slate" split="1/3">
-      <Image src={salahuddin} alt="Salahuddin Jitmoud" class="w-full rounded" />
-      <div>
-        <p>Puisses-tu entendre ceci : Dieu ne fait pas de sélection à l’entrée. Il accueille le petit pécheur, le pécheur ordinaire, le grand pécheur. Alors je t’invite à revenir vers Dieu. Si une simple feuille morte, portée par le vent comme moi, peut entrouvrir la fenêtre de la foi, alors toi aussi tu le peux 🍂🌬️🪟✨. Et puisque, sans l’avoir voulu, je finis par servir d’exemple, puisque le chemin vers Dieu est ouvert à tous, je suis forcément un peu toi. Je suis le monde d’aujourd’hui. On peut se comprendre, que tu viennes du village d’à côté ou du pays voisin : le rond-point du repentir est le même pour tous, et nous avons tous rendez-vous. À l’heure où certains ont fait de Dieu un policier furieux, prêt à sanctionner la moindre erreur, le moindre échec 🚨, Son Messager, lui, marche sur Sa terre, sous tes yeux . Il porte tes failles, tes ratés, tes contradictions, parfois même tes méchancetés, et malgré tout Dieu le nourrit et le soutient devant toi 🍞✨. Alors dis-moi… qu’as-tu vraiment compris de Ses paroles ?</p>
-        <p>Dieu ne dresse pas un podium 🏆🚫 entre “les meilleurs” et “les moins bons”. Il éprouve plutôt des chemins 🛤️ : nos méthodes 🧭, nos intentions 🎯, la sincérité du cœur ❤️, et la tenue de nos convictions 🧱✨. Revenons au point de départ 🔁📌 : qu’un homme ait mille fautes à son actif 📉, et qu’en face de lui un autre n’en ait que dix 🔟, tous deux restent, devant Dieu , dans la même situation de culpabilité ⚖️. Ils s’exposent au même risque majeur ⚠️ : celui de la perdition, ce que le Coran nomme la Grande Perte , c’est-à-dire un basculement vers un enfer🔥⛓️. Et tous deux ont un besoin impératif : la miséricorde de Dieu 🤲✨🌧️.</p>
-      </div>
-    </Band>
-
     <SalahuddinSection />
     <PardonSection />
-
     <CreationSection />
-
     <QuranSection />
-
     <FourmisSection />
-
     <MessageSection />
-
     <div class="flex justify-center">
-      <Image src={tiktok} alt="Vidéo TikTok" class="w-2/3 rounded" />
+      <Image src={tiktok} alt="Aperçu de la vidéo TikTok du Bateau" class="w-full max-w-2xl rounded-lg" />
     </div>
-
     <ArticlesSection />
-
-    <p class="text-sm text-gray-400 text-center">Je suis pour beaucoup un cas étrange… mais Toi, Tu es mon puissant refuge. (Psaumes 71:7) 🛡️🙏</p>
+    <p class="text-sm text-muted-foreground text-center">Je suis pour beaucoup un cas étrange… mais Toi, Tu es mon puissant refuge. (Psaumes 71:7) 🛡️🙏</p>
   </Wrapper>
 </BaseLayout>

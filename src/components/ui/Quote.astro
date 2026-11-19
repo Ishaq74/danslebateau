@@ -1,17 +1,22 @@
 ---
 interface Props {
   cite?: string;
+  variant?: "default" | "centered" | "scripture";
   class?: string;
 }
 
-const { cite, class: className } = Astro.props;
+const { cite, variant = "default", class: className } = Astro.props;
+const variants = {
+  default: "border-l-4 border-primary-accent pl-5 text-left",
+  centered: "mx-auto max-w-3xl border-y border-primary-accent/50 px-6 py-5 text-center",
+  scripture: "mx-auto max-w-4xl border-y-2 border-primary-accent/60 px-6 py-6 text-center text-xl font-semibold leading-relaxed md:text-2xl",
+};
 ---
-
-<figure class:list={["my-2 border-l-4 border-primary-accent pl-5", className]}>
+<figure class:list={["my-6", variants[variant], className]}>
   {cite && (
-    <figcaption class="mb-1 text-sm font-semibold uppercase tracking-wider text-primary-accent">{cite}</figcaption>
+    <figcaption class:list={["mb-2 font-semibold uppercase tracking-wider text-primary-accent", variant === "scripture" ? "text-sm" : "text-xs"]}>{cite}</figcaption>
   )}
-  <blockquote class="italic" style="font-size: var(--text-quote); line-height: var(--text-quote--line-height)">
+  <blockquote class:list={["italic", variant === "default" ? "text-quote" : "text-lg md:text-xl", variant === "scripture" && "md:text-2xl"]}>
     <slot />
   </blockquote>
 </figure>

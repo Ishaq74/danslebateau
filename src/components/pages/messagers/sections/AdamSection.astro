@@ -1,13 +1,25 @@
 ---
 import Band from "@components/ui/Band.astro";
 import Quote from "@components/ui/Quote.astro";
+import { Image } from "astro:assets";
+import illustration from "@assets/images/messagers/exemple-adam.png";
+import jellyfish from "@assets/images/messagers/meduse.jpg";
 ---
-<Band tone="slate">
-  <p>Le Messager devient alors un argument vivant, un témoin contre les hypocrites. Car ceux qui prétendent croire au Coran prétendent aussi croire en la Miséricorde de Dieu : ils sont censés orienter leurs cœurs vers la compassion, l’intelligence et l’élévation 🤲🕊️. Pourtant, lorsqu’un homme chargé de poids, marqué par son histoire ou perçu comme imparfait se présente à eux, les voilà qui jugent, condamnent, méprisent.</p>
-  <p>📜 Exemple coranique — « Ils dirent : “Ô Moïse, veux-tu me tuer comme tu as tué un homme hier ? Tu ne veux être qu’un tyran sur la terre, et tu ne veux pas être parmi les réformateurs.” » (Coran 28:19). Dans ce passage, Moïse ne vient pas avec violence ni domination, il intervient pour empêcher une injustice.</p>
-  <p>C’est exactement là que se dévoile leur incohérence intérieure : ils prétendent valoriser la justice → mais rejettent celui qui la met en pratique ; ils prétendent croire en la réforme → mais accusent le réformateur.</p>
-  <p>Moïse en est l’un des portraits les plus “humains” de tous. Dans la Torah, on le voit agir dans l’impulsion: il frappe l’Égyptien et le tue (Exode 2:11–12) ⚡. Dans le Coran, la même humanité est assumée sans fard: Moïse tue un homme dans un moment de colère puis reconnaît sa faute et demande pardon (Coran 28:15–16) 😔🤲.</p>
-  <Quote cite="Sourate 26:18">“On ne t’a pas élevé chez nous quand tu étais enfant ? Tu n’as pas vécu chez nous des années de ta vie ? Puis tu as commis l’acte que tu as commis… et te voilà parmi les dénégateurs (alkafiriyna) !”</Quote>
-  <p>Moise repond a Pharaon : (26 : 20) - Il dit : "Je l'ai fait alors que j'étais du nombre des égarés. Je me suis donc enfui de vous quand j'ai eu peur de vous. Puis, mon Seigneur m'a accordé le jugement et a fait de moi l'un des envoyés." C’est justement là que le tableau devient cristallin 🧊📜.</p>
-  <p>Voilà ce que c’est qu’un messager de Dieu : Un être repris, traversé, corrigé, transformé… un homme qui marche avec sa faute reconnue, et une mission plus grande que lui 🚶‍♂️🌌🧭.</p>
-</Band>
+<section id="adam" aria-labelledby="adam-title" class="scroll-mt-28 space-y-5">
+  <h2 id="adam-title" class="text-center uppercase tracking-wide">Adam</h2>
+  <Band tone="navy" split="1/3">
+    <div class="space-y-3">
+      <Image src={illustration} alt="Illustration du récit d'Adam" class="mx-auto w-full rounded-lg" />
+      <Image src={jellyfish} alt="Méduse dans l'eau" class="w-full rounded-lg" />
+    </div>
+    <div class="space-y-4">
+      <p>Le récit d'Adam traverse les Écritures. Il commence par la création de l'être humain, l'enseignement des noms et la responsabilité confiée à l'homme sur la terre.</p>
+      <Quote cite="Coran 2:30–31">Lorsque Ton Seigneur dit aux anges : « Je vais établir sur la terre un khalife. » [...] Et Il apprit à Adam tous les noms.</Quote>
+      <p>Adam reçoit une limite, mais il oublie et trébuche. Le récit ne s'arrête pourtant pas à la faute : Dieu lui enseigne les paroles du repentir et accueille son retour.</p>
+      <Quote cite="Coran 20:115">Nous avions auparavant fait une recommandation à Adam ; mais il oublia, et Nous n'avons pas trouvé chez lui de résolution ferme.</Quote>
+      <Quote cite="Coran 2:37">Puis Adam reçut de son Seigneur des paroles, et Dieu agréa son repentir. C'est Lui, certes, le Repentant, le Miséricordieux.</Quote>
+      <p>La Genèse raconte elle aussi la transgression, la prise de conscience et la sortie du jardin (Genèse 2–3). Les deux traditions mettent en scène la vulnérabilité humaine, la responsabilité et la possibilité du retour vers Dieu.</p>
+      <Quote cite="Coran 7:23">Ils dirent : « Notre Seigneur, nous nous sommes fait du tort à nous-mêmes. Et si Tu ne nous pardonnes pas et ne nous fais pas miséricorde, nous serons très certainement du nombre des perdants. »</Quote>
+    </div>
+  </Band>
+</section>

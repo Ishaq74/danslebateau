@@ -1,17 +1,29 @@
 ---
 import Band from "@components/ui/Band.astro";
+import { Image } from "astro:assets";
+import illustration from "@assets/images/le-livre-de-dieu/queue-baleine.jpg";
+import boat from "@assets/images/le-livre-de-dieu/bateau-navigue-eau.jpg";
 import Quote from "@components/ui/Quote.astro";
 ---
-<Band tone="wine">
-  <h2 class="text-center">Le Livre De jonas</h2>
-  <p>Après le Livre d’Abdias, le Livre de Jonas est le plus petit livre de la Bible 📖✨, avec seulement quatre chapitres 🐋📜. Court sur le papier, certes, mais loin d’être léger dans le fond 🧠🔥. Son récit concentre une profondeur spirituelle étonnante : la fuite, l’appel, la miséricorde et le retournement des cœurs 🌊➡️❤️.</p>
-  <Quote cite="Livre de Jonas 1:3">Jonas se leva, mais pour s’enfuir à Tarsis, loin de la face du Seigneur.</Quote>
-  <Quote cite="Quran 21 : 87">Et Zun-Nun (Jonas) quand il partit, en colère. Il pensa que Nous N'allions pas l'éprouver.</Quote>
-  <Quote cite="Coran 37:139">Jonas était certes du nombre des messagers. Lorsqu’il s’enfuit vers le bateau chargé.</Quote>
-  <Quote cite="Livre de Jonas 1:7">Et les matelots se disaient entre eux : « Tirons au sort pour savoir à qui nous devons ce malheur. »</Quote>
-  <Quote cite="Jonas 2:11">Alors le Seigneur parla au poisson, et celui-ci rejeta Jonas sur la terre ferme.</Quote>
-  <p>Le Livre de Jonas nous montre un peuple qui a cru au message de son prophète et qui s’est repenti sincèrement devant Dieu 🤲🌊.</p>
-  <Quote cite="Jonas 3:5">Aussitôt, les gens de Ninive crurent en Dieu. Ils annoncèrent un jeûne, et tous, du plus grand au plus petit, se vêtirent de toile à sac.</Quote>
-  <Quote cite="Quran 10 : 98">Si seulement il y avait une cité qui ait cru, et à laquelle sa foi eut été utile, en dehors du peuple de Jonas !</Quote>
-  <p>Évangile - Matthieu 12:40 : Car, de même que Jonas fut trois jours et trois nuits dans le ventre d'un grand poisson, de même le Fils de l'homme sera trois jours et trois nuits dans le sein de la terre.</p>
+<Band id="jonas" tone="wine">
+  <div class="space-y-3">
+    <Image src={illustration} alt="Queue d’une baleine émergeant de l’eau" class="h-56 w-full rounded-md object-cover md:h-72" />
+    <Image src={boat} alt="Un bateau sur la mer" class="h-44 w-full rounded-md object-cover" />
+  </div>
+  <div class="space-y-4">
+    <h2 class="text-center">Le Livre de Jonas</h2>
+    <p>Après le Livre d’Abdias, le Livre de Jonas est le plus petit livre de la Bible, avec seulement quatre chapitres. Court sur le papier, il concentre une profondeur spirituelle étonnante : la fuite, l’appel, la miséricorde et le retournement des cœurs. Le Coran en fait aussi le rappel, non pour réapprendre une histoire déjà connue des Gens du Livre, mais pour en raviver le sens et la portée universelle.</p>
+    <p>Lorsque Dieu l’envoie prêcher à Ninive, Jonas choisit de fuir au lieu d’obéir. Il prend la direction opposée, vers Tarsis, et s'embarque.</p>
+    <Quote cite="Livre de Jonas 1:3">Jonas se leva, mais pour s’enfuir à Tarsis, loin de la face du Seigneur.</Quote>
+    <Quote cite="Coran 21:87">Et Zun-Nun (Jonas) quand il partit, en colère. Il pensa que Nous n'allions pas l'éprouver.</Quote>
+    <Quote cite="Coran 37:139–140">Jonas était certes du nombre des messagers. Lorsqu’il s’enfuit vers le bateau chargé.</Quote>
+    <Quote cite="Livre de Jonas 1:7">Et les matelots se disaient entre eux : « Tirons au sort pour savoir à qui nous devons ce malheur. »</Quote>
+    <p>Le récit conduit Jonas au fond de la mer et dans le ventre du poisson. Après son invocation, il est rejeté sur la terre ferme, affaibli.</p>
+    <Quote cite="Coran 37:145–146">Puis Nous le rejetâmes sur la terre nue, alors qu’il était affaibli. Et Nous fîmes pousser au-dessus de lui un plant de courge.</Quote>
+    <Quote cite="Livre de Jonas 2:11">Alors le Seigneur parla au poisson, et celui-ci rejeta Jonas sur la terre ferme.</Quote>
+    <p>Le Livre de Jonas montre ensuite un peuple qui croit au message de son prophète et se repent sincèrement devant Dieu. Le site insiste sur le caractère presque unique de ce retournement collectif : Ninive revient à Dieu avant que le châtiment ne tombe.</p>
+    <Quote cite="Livre de Jonas 3:5">Aussitôt, les gens de Ninive crurent en Dieu. Ils annoncèrent un jeûne, et tous, du plus grand au plus petit, se vêtirent de toile à sac.</Quote>
+    <Quote cite="Coran 10:98">Si seulement il y avait une cité qui ait cru, et à laquelle sa foi eût été utile, en dehors du peuple de Jonas ! Lorsqu'ils crurent, Nous éloignâmes d'eux le châtiment de l'humiliation dans la vie d'ici-bas, et Nous leur accordâmes jouissance pendant un certain temps.</Quote>
+    <Quote cite="Matthieu 12:40">Car, de même que Jonas fut trois jours et trois nuits dans le ventre d'un grand poisson, de même le Fils de l'homme sera trois jours et trois nuits dans le sein de la terre.</Quote>
+  </div>
 </Band>

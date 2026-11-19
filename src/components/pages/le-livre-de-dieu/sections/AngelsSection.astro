@@ -1,0 +1,27 @@
+---
+import Band from "@components/ui/Band.astro";
+import Quote from "@components/ui/Quote.astro";
+import { Image } from "astro:assets";
+import bird from "@assets/images/le-livre-de-dieu/oiseau-blanc-coucher-soleil-neige.jpg";
+import flowers from "@assets/images/le-livre-de-dieu/fleurs-oeil.png";
+import butterfly from "@assets/images/le-livre-de-dieu/papillon-blanc.png";
+---
+<section id="anges" aria-labelledby="anges-title" class="scroll-mt-28 space-y-5">
+  <h2 id="anges-title" class="text-center">Michaël et les anges</h2>
+  <Band tone="graphite">
+    <div class="grid gap-3 sm:grid-cols-3">
+      <Image src={bird} alt="Oiseau blanc dans la lumière du coucher de soleil" class="h-44 w-full rounded-md object-cover" />
+      <Image src={flowers} alt="Composition florale en forme d'œil" class="h-44 w-full rounded-md object-cover" />
+      <Image src={butterfly} alt="Papillon blanc" class="h-44 w-full rounded-md object-cover" />
+    </div>
+    <p>Dans la continuité des noms coraniques difficiles à identifier par le seul Coran apparaît Michaël (Mīkā’īl), cité dans un verset qui le mentionne aux côtés des anges et de Gabriel.</p>
+    <Quote cite="Coran 2:98">Quiconque est ennemi de Dieu, de Ses anges, de Ses messagers, de Gabriel et de Michaël : Dieu est l'ennemi des dénégateurs.</Quote>
+    <p>Dans les Écritures bibliques, Michaël est présenté comme un prince spirituel, un protecteur d'Israël et un chef des armées célestes, opposé aux forces du mal. Le mot grec « archángelos » signifie « chef des anges ».</p>
+    <Quote cite="Coran 41:30–31">Ceux qui ont dit : « Notre Seigneur est Dieu », puis qui se sont tenus droit : les anges descendent sur eux. « Ne craignez rien et ne soyez pas affligés. Réjouissez-vous du Paradis qui vous était promis. Nous sommes vos protecteurs dans la vie d'ici-bas et dans l'Au-delà. »</Quote>
+    <p>Le texte évoque aussi l'action des anges dans la vie des croyants : inspirer une idée, donner du courage, calmer la peur et augmenter la patience.</p>
+    <Quote cite="Coran 16:2">Il fait descendre les Anges avec l'Esprit, par Son ordre, sur qui Il veut parmi Ses serviteurs : « Avertissez qu'il n'y a de divinité que Moi. Prémunissez-vous de Moi. »</Quote>
+    <h3>Les anges sont des messagers</h3>
+    <Quote cite="Coran 35:1">Louange à Dieu, Initiateur des cieux et de la terre, qui a fait des anges des messagers dotés de deux, trois ou quatre ailes. Il ajoute à la création ce qu'Il veut. Dieu est capable de toute chose.</Quote>
+    <p>Ils ont aussi pour mission de consigner nos actions et sont décrits comme de nobles scribes. Le texte invite à prêter attention aux petites choses du quotidien : certains signes discrets peuvent nous aider à prendre un bon chemin, à supporter une situation ou à recevoir une inspiration que l'on attribue parfois à tort à sa seule intelligence.</p>
+  </Band>
+</section>

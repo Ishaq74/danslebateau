@@ -1,0 +1,25 @@
+---
+import Band from "@components/ui/Band.astro";
+import Quote from "@components/ui/Quote.astro";
+import { Image } from "astro:assets";
+import illustration from "@assets/images/messagers/pigeon.png";
+import sunset from "@assets/images/messagers/coucher-soleil-oiseaux.jpg";
+---
+<section id="moise" aria-labelledby="moise-title" class="scroll-mt-28 space-y-5">
+  <h2 id="moise-title" class="text-center uppercase tracking-wide">Moïse</h2>
+  <Band tone="slate" split="1/3">
+    <div class="space-y-3">
+      <Image src={sunset} alt="Oiseaux en vol au coucher du soleil" class="w-full rounded-lg" />
+      <Image src={illustration} alt="Pigeon en vol" class="mx-auto w-28 rounded-lg" />
+    </div>
+    <div class="space-y-4">
+      <p>Moïse est l'un des exemples majeurs de la manière dont les Écritures présentent un messager : un homme marqué par son histoire, ses erreurs et ses peurs, mais appelé à porter une mission qui le dépasse.</p>
+      <p>Le récit coranique rappelle l'épisode où Moïse intervient dans une querelle et frappe un homme, qui meurt. Il reconnaît aussitôt sa faute et demande pardon à Dieu.</p>
+      <Quote cite="Coran 28:15–16">Il entra dans la ville à un moment d'inattention de ses habitants. Il y trouva deux hommes qui se battaient. [...] Moïse dit : « Seigneur, je me suis fait du tort à moi-même ; pardonne-moi. » Et Il lui pardonna.</Quote>
+      <p>La Torah rapporte également l'épisode de l'Égyptien frappé par Moïse (Exode 2:11–12). Les deux récits permettent de regarder en face un acte grave, puis la prise de conscience qui le suit.</p>
+      <Quote cite="Coran 26:20–21">Il dit : « Je l'ai fait alors que j'étais du nombre des égarés. Puis j'ai fui loin de vous lorsque j'ai eu peur de vous. Ensuite, mon Seigneur m'a donné la sagesse et m'a désigné parmi les messagers. »</Quote>
+      <p>Le texte ne présente donc pas un homme sans faille : il montre un messager qui reconnaît sa faute, traverse la peur, puis répond à l'appel divin.</p>
+      <Quote cite="Coran 20:25–28">Il dit : « Seigneur, ouvre-moi ma poitrine, facilite ma mission, et dénoue un nœud de ma langue, afin qu'ils comprennent mes paroles. »</Quote>
+    </div>
+  </Band>
+</section>
