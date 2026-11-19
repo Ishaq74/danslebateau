@@ -8,10 +8,14 @@ import AdamSection from '@components/pages/messagers/sections/AdamSection.astro'
 import DavidSection from '@components/pages/messagers/sections/DavidSection.astro';
 import JobSection from '@components/pages/messagers/sections/JobSection.astro';
 import ArticlesSection from '@components/pages/misc/ArticlesSection.astro';
+import { Image } from 'astro:assets';
+import sunset from '@assets/images/messagers/coucher-soleil-oiseaux.jpg';
+import boat from '@assets/images/messagers/file.mp4';
 ---
 <BaseLayout title="Les Messagers" description="Les récits de Moïse, Adam, David et Job dans les Écritures.">
-  <div class="max-w-reading mx-auto space-y-10 py-8">
+  <div class="mx-auto max-w-reading space-y-10 px-4 py-8">
     <HeroSection title="LES MESSAGERS" />
+    <Image src={sunset} alt="Oiseaux en vol au coucher du soleil" class="w-full rounded-lg" />
     <IntroSection />
     <MessagersSection />
     <nav aria-label="Accès direct aux récits" class="flex flex-wrap justify-center gap-3 text-sm">
