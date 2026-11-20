@@ -4,7 +4,7 @@ Branche de travail : `migration-complete`
 
 ## État vérifié le 20 novembre 2026
 
-- Le build Astro GitHub Actions du commit `db229dc0a6992c37dc3f4114382ee60287501ec0` est **réussi** : [run 44760099497](https://github.com/Ishaq74/danslebateau/actions/runs/44760099497). Le nettoyage des sections du Livre de Dieu est en cours de compilation au dernier contrôle.
+- Le build Astro GitHub Actions du commit `da9957075cfabb15e7e4537be7edacc852eb2fe6` est **réussi** : [run 44761151801](https://github.com/Ishaq74/danslebateau/actions/runs/44761151801). Le commit suivant, qui complète la section générale « Messagers », est en cours de compilation : [run 44761203595](https://github.com/Ishaq74/danslebateau/actions/runs/44761203595).
 - La navigation desktop sépare maintenant le lien de la page parente du bouton visuel de sous-menu.
 - Sur mobile, le lien de la page parente est également accessible dans le menu déroulant.
 - L’ancienne URL Wix `/le-livre-de-dieu-1` redirige en 301 vers `/le-livre-de-dieu`.
@@ -29,7 +29,7 @@ La page Wix publique « Les Messagers » est accessible à l’adresse https://w
 ## À terminer avant de déclarer la migration fidèle
 
 - [x] Identifier `oldsite/messagers.html` comme un doublon et utiliser la page Wix publique comme référence de travail.
-- [ ] Terminer la restauration intégrale des développements de « Les Messagers » ; les sections ont été étoffées mais ne reprennent pas encore tous les paragraphes de la source publique.
+- [ ] Terminer la restauration intégrale des développements de « Les Messagers » ; les sections générales, Adam, David et Job ont été enrichies avec les développements et références de la page publique. Il reste à comparer les derniers paragraphes et les visuels ; la restauration textuelle est encore partielle.
 - [ ] Terminer la comparaison intégrale de « Le Livre de Dieu » : les sections Idrîs, anges, Psaumes, Job, Jonas, Évangile et Torah ont été enrichies. Une passe de nettoyage a supprimé les répétitions introduites par les premiers ajouts et replacé les paragraphes d’Idrîs hors de la grille d’images ; plusieurs passages de la source Wix restent toutefois condensés.
 - [x] Vérifier que l’archive Wix de l’accueil correspond aux grands blocs de contenu présents dans Astro.
 - [ ] Comparer visuellement et un à un les images de l’accueil.
