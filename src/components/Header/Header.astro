@@ -121,6 +121,14 @@ const {
                         </button>
                       </CollapsibleTrigger>
                       <CollapsibleContent class="flex flex-col pl-4">
+                        <SheetClose asChild>
+                          <a
+                            href={link.href}
+                            class="text-muted-foreground hover:text-foreground flex w-full items-center gap-2 rounded-md py-2 text-lg font-semibold transition-colors"
+                          >
+                            {link.label}
+                          </a>
+                        </SheetClose>
                         {link.children.map((child) => (
                           <SheetClose asChild>
                             <a
