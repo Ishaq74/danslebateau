@@ -4,7 +4,7 @@ Branche de travail : `migration-complete`
 
 ## État vérifié le 20 novembre 2026
 
-- Le build Astro GitHub Actions du dernier commit contrôlé `1e142531876bd02ffc2ae0d885be04fe36d18670` est **réussi** : [run 44759363696](https://github.com/Ishaq74/danslebateau/actions/runs/44759363696).
+- Le build Astro GitHub Actions du commit `db229dc0a6992c37dc3f4114382ee60287501ec0` est **réussi** : [run 44760099497](https://github.com/Ishaq74/danslebateau/actions/runs/44760099497). Le nettoyage des sections du Livre de Dieu est en cours de compilation au dernier contrôle.
 - La navigation desktop sépare maintenant le lien de la page parente du bouton visuel de sous-menu.
 - Sur mobile, le lien de la page parente est également accessible dans le menu déroulant.
 - L’ancienne URL Wix `/le-livre-de-dieu-1` redirige en 301 vers `/le-livre-de-dieu`.
@@ -30,7 +30,7 @@ La page Wix publique « Les Messagers » est accessible à l’adresse https://w
 
 - [x] Identifier `oldsite/messagers.html` comme un doublon et utiliser la page Wix publique comme référence de travail.
 - [ ] Terminer la restauration intégrale des développements de « Les Messagers » ; les sections ont été étoffées mais ne reprennent pas encore tous les paragraphes de la source publique.
-- [ ] Terminer la comparaison intégrale de « Le Livre de Dieu » : les sections Idrîs, anges, Psaumes, Job, Jonas, Évangile et Torah ont reçu des ajouts éditoriaux, mais plusieurs passages de la source Wix restent condensés.
+- [ ] Terminer la comparaison intégrale de « Le Livre de Dieu » : les sections Idrîs, anges, Psaumes, Job, Jonas, Évangile et Torah ont été enrichies. Une passe de nettoyage a supprimé les répétitions introduites par les premiers ajouts et replacé les paragraphes d’Idrîs hors de la grille d’images ; plusieurs passages de la source Wix restent toutefois condensés.
 - [x] Vérifier que l’archive Wix de l’accueil correspond aux grands blocs de contenu présents dans Astro.
 - [ ] Comparer visuellement et un à un les images de l’accueil.
 - [ ] Vérifier chaque image Wix par rapport à son équivalent local dans `src/assets/images/`. La page Wix publique « Messagers » utilise notamment des visuels datés de février 2026 et des images `islamic-3640633_1280.png` / `pigeon-5508878_1280.png` qui ne correspondent pas clairement aux noms des fichiers locaux actuels.
