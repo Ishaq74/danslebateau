@@ -4,7 +4,7 @@ Branche de travail : `migration-complete`
 
 ## État vérifié le 20 novembre 2026
 
-- Le build Astro GitHub Actions du commit `42702fe4a94a8cb9006d2ad49f412bdb6ed9efe8` est **réussi** : [run 29](https://github.com/Ishaq74/danslebateau/actions/runs/44756133894).
+- Le build Astro GitHub Actions du dernier commit contrôlé `1e142531876bd02ffc2ae0d885be04fe36d18670` est **réussi** : [run 44759363696](https://github.com/Ishaq74/danslebateau/actions/runs/44759363696).
 - La navigation desktop sépare maintenant le lien de la page parente du bouton visuel de sous-menu.
 - Sur mobile, le lien de la page parente est également accessible dans le menu déroulant.
 - L’ancienne URL Wix `/le-livre-de-dieu-1` redirige en 301 vers `/le-livre-de-dieu`.
@@ -38,4 +38,4 @@ La page Wix publique « Les Messagers » est accessible à l’adresse https://w
 
 ## Limites des éléments disponibles
 
-Aucun wireframe ni jeu de captures d’écran de référence n’a été trouvé dans l’arborescence du dépôt lors de cet audit. La structure `Band` utilise une colonne sur petit écran puis des grilles à partir du breakpoint `md`, mais cela ne remplace pas un test visuel réel. Les derniers commits de restauration éditoriale déclenchent encore des builds GitHub Actions ; vérifier leur résultat avant de fusionner.
+Aucun wireframe ni jeu de captures d’écran de référence n’a été trouvé dans l’arborescence du dépôt lors de cet audit. La structure `Band` utilise une colonne sur petit écran puis des grilles à partir du breakpoint `md`, mais cela ne remplace pas un test visuel réel. Les changements présents sur la branche ont passé le build GitHub Actions ; le contrôle visuel multi-format reste à faire.
