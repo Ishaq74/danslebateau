@@ -1,5 +1,7 @@
 @theme inline {
   /* Palette Wix */
+  --color-white: #ffffff;
+  --color-black: #000000;
   --color-ink: #292929;
   --color-slate: #303030;
   --color-graphite: #414141;
