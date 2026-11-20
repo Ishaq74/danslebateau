@@ -163,8 +163,8 @@ const style = [
 const classes = [
   "section-component",
   usedVariant ? `section-${usedVariant}` : "",
-  cols && cols > 1 ? "grid" : "block",
-  cols && cols > 1 ? "grid-cols-1" : "",
+  typeof cols === "number" && cols > 1 ? "grid" : "block",
+  typeof cols === "number" && cols > 1 ? "grid-cols-1" : "",
   textAlign ? `text-${textAlign}` : "",
   className,
 ].filter(Boolean).join(" ");

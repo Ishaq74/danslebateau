@@ -27,7 +27,7 @@ const { class: className } = Astro.props as Props;
 </Toggle>
 
 <script>
-  import type { ToggleChangeEvent } from "@atoms/toggle";
+  type ToggleChangeEvent = CustomEvent<{ pressed: boolean }>;
 
   class ThemeToggleHandler {
     private toggle: HTMLButtonElement;
