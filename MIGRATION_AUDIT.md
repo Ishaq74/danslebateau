@@ -4,7 +4,7 @@ Branche de travail : `migration-complete`
 
 ## État vérifié le 20 novembre 2026
 
-- Les builds GitHub Actions des dernières séries de corrections sont réussis : [Messagers et audit](https://github.com/Ishaq74/danslebateau/actions/runs/44765263229), [Psaumes](https://github.com/Ishaq74/danslebateau/actions/runs/44766252677), [Évangile](https://github.com/Ishaq74/danslebateau/actions/runs/44766285820) et [Torah](https://github.com/Ishaq74/danslebateau/actions/runs/44766306943). Le complément le plus récent de la section Job des Messagers est en cours de compilation : [run 44766379169](https://github.com/Ishaq74/danslebateau/actions/runs/44766379169).
+- Les builds GitHub Actions des dernières séries de corrections sont tous réussis : [Psaumes](https://github.com/Ishaq74/danslebateau/actions/runs/44766252677), [Évangile](https://github.com/Ishaq74/danslebateau/actions/runs/44766285820), [Torah](https://github.com/Ishaq74/danslebateau/actions/runs/44766306943), [Job – Messagers](https://github.com/Ishaq74/danslebateau/actions/runs/44766379169) et [audit final](https://github.com/Ishaq74/danslebateau/actions/runs/44766428471). Le dernier commit de la branche est `7e646415c674c091ab95e8e5dcb66e1a127a8d30` ; son contrôle GitHub « build » est réussi.
 - La navigation desktop sépare maintenant le lien de la page parente du bouton visuel de sous-menu.
 - Sur mobile, le lien de la page parente est également accessible dans le menu déroulant.
 - L’ancienne URL Wix `/le-livre-de-dieu-1` redirige en 301 vers `/le-livre-de-dieu`.
@@ -35,6 +35,10 @@ La page Wix publique « Les Messagers » est accessible à l’adresse https://w
 - [ ] Comparer visuellement et un à un les images de l’accueil.
 - [ ] Vérifier chaque image Wix par rapport à son équivalent local dans `src/assets/images/`. La page Wix publique « Messagers » utilise notamment des visuels datés de février 2026 et des images `islamic-3640633_1280.png` / `pigeon-5508878_1280.png` qui ne correspondent pas clairement aux noms des fichiers locaux actuels.
 - [ ] Faire une vérification visuelle réelle aux largeurs mobile, tablette et desktop.
+
+## Livraison et publication
+
+Le workflow `.github/workflows/build.yml` exécute uniquement `npm install` et `npm run build` sur la branche `migration-complete` ; il ne publie pas le site. Le contrôle Vercel présent dans GitHub correspond à « Vercel Preview Comments » et ne constitue pas, à lui seul, une preuve de déploiement de production. Lors de la vérification du 20 novembre 2026, les URL publiques d'accueil et de Messagers servent encore le contenu Wix. Aucune publication de la branche Astro sur le domaine de production n'a été effectuée ni confirmée dans le cadre de cette migration.
 
 ## Limites des éléments disponibles
 
